@@ -6,8 +6,11 @@ import 'testListPage.dart';
 class HomePage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
+      backgroundColor: Color(0xFFFFFFF0),
       appBar: AppBar(
-        title: Text("Grades"),
+        title: Text("Ecole Sud d'Arthedain"),
+        //COlor obligé 0XFF + color Hex (6 bits)
+        backgroundColor: Color(0xFF7E0000),
       ),
       body: Column(
         mainAxisAlignment: MainAxisAlignment.spaceEvenly,

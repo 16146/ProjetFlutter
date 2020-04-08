@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\malek\\OneDrive\\Bureau\\UEMobileApp\\Flutter_Grades-master\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-vi\\values-vi.xml",
+            "outputFile": "C:\\Users\\malek\\OneDrive\\Bureau\\UEMobileApp\\ProjetFlutter\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-vi\\values-vi.xml",
             "map": [
                 {
                     "source": "C:\\Users\\malek\\.gradle\\caches\\transforms-2\\files-2.1\\a3e137cc514fb8dcaaa2b7be67db5532\\jetified-play-services-basement-17.0.0\\res\\values-vi\\values.xml",

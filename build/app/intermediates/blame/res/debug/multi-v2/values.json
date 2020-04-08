@@ -1,7 +1,7 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\malek\\OneDrive\\Bureau\\UEMobileApp\\Flutter_Grades-master\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
+            "outputFile": "C:\\Users\\malek\\OneDrive\\Bureau\\UEMobileApp\\ProjetFlutter\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values\\values.xml",
             "map": [
                 {
                     "source": "C:\\Users\\malek\\.gradle\\caches\\transforms-2\\files-2.1\\d255798b3263f4a3c8e304b7de4de531\\coordinatorlayout-1.0.0\\res\\values\\values.xml",
@@ -42,7 +42,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\malek\\OneDrive\\Bureau\\UEMobileApp\\Flutter_Grades-master\\build\\app\\generated\\res\\google-services\\debug\\values\\values.xml",
+                    "source": "C:\\Users\\malek\\OneDrive\\Bureau\\UEMobileApp\\ProjetFlutter\\build\\app\\generated\\res\\google-services\\debug\\values\\values.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9",
                         "startColumns": "4,4,4,4,4,4,4,4",
@@ -56,6 +56,25 @@
                         "startOffsets": "5528,5673,5780,5863,5967,6077,6197,6293",
                         "endColumns": "144,106,82,103,109,119,95,72",
                         "endOffsets": "5668,5775,5858,5962,6072,6192,6288,6361"
+                    }
+                },
+                {
+                    "source": "C:\\Users\\malek\\OneDrive\\Bureau\\UEMobileApp\\ProjetFlutter\\android\\app\\src\\main\\res\\values\\styles.xml",
+                    "from": {
+                        "startLines": "2",
+                        "startColumns": "4",
+                        "startOffsets": "55",
+                        "endLines": "6",
+                        "endColumns": "12",
+                        "endOffsets": "347"
+                    },
+                    "to": {
+                        "startLines": "76",
+                        "startColumns": "4",
+                        "startOffsets": "6437",
+                        "endLines": "80",
+                        "endColumns": "12",
+                        "endOffsets": "6729"
                     }
                 },
                 {
@@ -92,25 +111,6 @@
                         "startOffsets": "3057,4235",
                         "endColumns": "67,166",
                         "endOffsets": "3120,4397"
-                    }
-                },
-                {
-                    "source": "C:\\Users\\malek\\OneDrive\\Bureau\\UEMobileApp\\Flutter_Grades-master\\android\\app\\src\\main\\res\\values\\styles.xml",
-                    "from": {
-                        "startLines": "2",
-                        "startColumns": "4",
-                        "startOffsets": "55",
-                        "endLines": "6",
-                        "endColumns": "12",
-                        "endOffsets": "347"
-                    },
-                    "to": {
-                        "startLines": "76",
-                        "startColumns": "4",
-                        "startOffsets": "6437",
-                        "endLines": "80",
-                        "endColumns": "12",
-                        "endOffsets": "6729"
                     }
                 }
             ]
