@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="default_web_client_id" translatable="false">1022551161727-aodls333b09cjasqvfidg6vnok8cj8qp.apps.googleusercontent.com</string>
+    <string name="firebase_database_url" translatable="false">https://ecambe-825ed.firebaseio.com</string>
+    <string name="gcm_defaultSenderId" translatable="false">1022551161727</string>
+    <string name="google_api_key" translatable="false">AIzaSyD4IHtjDGIo51JjwEvVXuyffY7RxfKfuN8</string>
+    <string name="google_app_id" translatable="false">1:1022551161727:android:f3d93260c7c8029de8384a</string>
+    <string name="google_crash_reporting_api_key" translatable="false">AIzaSyD4IHtjDGIo51JjwEvVXuyffY7RxfKfuN8</string>
+    <string name="google_storage_bucket" translatable="false">ecambe-825ed.appspot.com</string>
+    <string name="project_id" translatable="false">ecambe-825ed</string>
+</resources>

@@ -1,0 +1,40 @@
+{
+  "project_info": {
+    "project_number": "1022551161727",
+    "firebase_url": "https://ecambe-825ed.firebaseio.com",
+    "project_id": "ecambe-825ed",
+    "storage_bucket": "ecambe-825ed.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:1022551161727:android:f3d93260c7c8029de8384a",
+        "android_client_info": {
+          "package_name": "El.HADDADI.ECAM.BE"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "1022551161727-aodls333b09cjasqvfidg6vnok8cj8qp.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD4IHtjDGIo51JjwEvVXuyffY7RxfKfuN8"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "1022551161727-aodls333b09cjasqvfidg6vnok8cj8qp.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
