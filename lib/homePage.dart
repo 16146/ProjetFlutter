@@ -1,6 +1,7 @@
 import 'package:flare_flutter/flare_actor.dart';
 import 'package:flutter/material.dart';
 import 'studentListPage.dart';
+import 'avisList.dart';
 import 'testListPage.dart';
 
 class HomePage extends StatelessWidget {
@@ -33,16 +34,16 @@ class HomePage extends StatelessWidget {
                   Navigator.push(
                       context,
                       MaterialPageRoute(
-                          builder: (context) => StudentListPage()));
+                          builder: (context) => AvisList()));
                 },
-                child: Text('Students'),
+                child: Text('Afficher les avis'),
               ),
               RaisedButton(
                 onPressed: () {
                   Navigator.push(context,
                       MaterialPageRoute(builder: (context) => TestListPage()));
                 },
-                child: Text('Tests'),
+                child: Text("S'inscrire à une classe"),
               ),
             ],
           ),
