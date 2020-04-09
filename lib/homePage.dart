@@ -1,5 +1,6 @@
 import 'package:flare_flutter/flare_actor.dart';
 import 'package:flutter/material.dart';
+import 'package:grades/adminCodePage.dart';
 import 'package:grades/authService.dart';
 import 'studentListPage.dart';
 import 'avisList.dart';
@@ -44,22 +45,40 @@ class HomePage extends StatelessWidget {
                 mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: <Widget>[
                   RaisedButton(
+                    color: Colors.red[900],
+                    child: Text('Afficher les avis',
+                    style: TextStyle(color: Colors.white)),
                     onPressed: () {
                       Navigator.push(
                           context,
                           MaterialPageRoute(
                               builder: (context) => AvisList()));
                     },
-                    child: Text('Afficher les avis'),
                   ),
                   RaisedButton(
+                    color: Colors.red[900],
                     onPressed: () {
                       Navigator.push(context,
                           MaterialPageRoute(builder: (context) => TestListPage()));
                     },
-                    child: Text("S'inscrire à une classe"),
+                    child: Text("S'inscrire à une classe",
+                    style: TextStyle(color: Colors.white)),
                   ),
                 ],
+              ),
+              Row ( 
+                mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: <Widget>[
+                  RaisedButton(
+                    color: Colors.black,
+                    onPressed: () {
+                      Navigator.push(context,
+                        MaterialPageRoute(builder: (context) => AdminCodePage()));
+                    },
+                    child: Text("Accéder aux fonctions admin",
+                    style: TextStyle(color: Colors.white)),
+                  ),
+                ]
               ),
             ],
           ),
