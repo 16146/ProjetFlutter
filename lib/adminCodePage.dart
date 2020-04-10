@@ -37,6 +37,7 @@ class _AdminCodePageState extends State<AdminCodePage> {
                   style: TextStyle(fontSize : 20.0)
                   ),
                   TextFormField(
+                    obscureText: true,
                     controller: _codeSecret,
                     decoration: const InputDecoration(
                       labelText: 'Entrez le code secret (=0000)',
