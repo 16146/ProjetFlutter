@@ -1,4 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:grouped_buttons/grouped_buttons.dart';
 import 'package:grades/classes.dart';
@@ -51,7 +52,7 @@ class _AddClassState extends State<AddClass> {
                     ),
                     validator: (value) {
                       if (value.isEmpty) {
-                        return 'Entrer une nouvelle classe';
+                        return 'Champs vide, entrer une nouvelle classe';
                       }
                       return null;
                     },
