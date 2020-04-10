@@ -1,6 +1,8 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
+import 'package:grades/admin/adminPage.dart';
+import 'package:grades/admin/deleteClass.dart';
 import 'package:grades/loading.dart';
 import 'package:grouped_buttons/grouped_buttons.dart';
 import 'package:grades/classes.dart';
@@ -95,14 +97,16 @@ class _AddClassState extends State<AddClass> {
                   ),
                   RaisedButton(
                     onPressed: () async {
-                      try {
+                      try 
+                      {
                         var res =  await (Firestore.instance.collection('classes').document(_classe.text)).get();
                         print("moukk");
                         print("moukk");
                         print("moukk");
                         print("moukk");
                         print("glauk " + res.data.toString());
-                        if (res.data == null)  {
+                        if (res.data == null)  
+                        {
                           var test = {
                             'Professeur': _professeur.text,
                           };
@@ -111,12 +115,48 @@ class _AddClassState extends State<AddClass> {
                               .collection('classes')
                               .document(_classe.text)
                               .setData(test);
-                          //Navigator.pop(context);
+                          Navigator.push(context, 
+                          MaterialPageRoute(builder: (context) => AdminPage())
+                          );
                           setState(() => loading = false); 
-                          }
+                          };
                         } else {
-                          return "Classe déjà existante";
-                        }
+                          showDialog( 
+                            context: context,
+                              builder: (BuildContext context) {
+                                return AlertDialog(
+                                  title: Text("Attention"),
+                                  content: Text("Classe déjà existante, vous êtes sur le point de l'éditer. Êtes-vous sûr de vouloir continuer ?"),
+                                  actions: <Widget>[
+                                    new FlatButton(
+                                      child: Text("Retour en arrière"),
+                                      onPressed: () {
+                                        Navigator.of(context).pop();
+                                      },
+                                    ),
+                                    new FlatButton(
+                                      child: Text("Continuer"),
+                                      onPressed: () {
+                                        var test = {
+                                        'Professeur': _professeur.text,
+                                        };
+                                        if (_formKey.currentState.validate()) {
+                                        Firestore.instance
+                                            .collection('classes')
+                                            .document(_classe.text)
+                                            .setData(test);
+                                        Navigator.push(context,
+                                        MaterialPageRoute(builder: (context) => AdminPage())
+                                        );
+                                        setState(() => loading = false); 
+                                        };
+                                      },
+                                    ),
+                                  ],
+                                );
+                              },
+                            );
+                          };
                         
                       } catch (err) {
                         print(err);
