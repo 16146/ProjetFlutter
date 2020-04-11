@@ -29,16 +29,19 @@ class _AddAvisState extends State<AddAvis> {
       yield i;
     }
   }
-
-
-  Widget build(BuildContext context) {
-    Firestore.instance.collection('classes').getDocuments().then((snapshot) => {
+  @override
+  void initState()  {
+    super.initState();
+     Firestore.instance.collection('classes').getDocuments().then((snapshot) => {
       for (final i in range(0, snapshot.documents.length)) {
         _classes.add(snapshot.documents[i].documentID.toString()),
-        //print(i),
-        //print(_classes[i]),
+        print(i),
+        print(_classes[i]),
       },
     });
+  }
+
+  Widget build(BuildContext context) {
     print(_classes);
     print("EAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
     print(_classes);
@@ -106,10 +109,10 @@ class _AddAvisState extends State<AddAvis> {
                       if (_formKey.currentState.validate()) {
                         Firestore.instance
                             .collection('avis')
-                            .document()
+                            .document("glou")
                             .setData(test);
 
-                        //Navigator.pop(context);
+                        Navigator.pop(context);
                         print("mouk en bermuda");
                         print(_checked);
                       }

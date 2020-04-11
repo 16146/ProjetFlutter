@@ -1,6 +1,7 @@
 import 'dart:io';
 
 import 'package:cloud_firestore/cloud_firestore.dart';
+import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
 import 'package:grades/classes.dart';
@@ -80,9 +81,9 @@ class _NotificationPermissionState extends State<NotificationPermission> {
   }
 ///Get the token, save it to the database for current user
   _saveDeviceToken() async {
-    String uid = 'jeffd23';
     String fcmToken = await _fcm.getToken();
-     
+    FirebaseUser user = await FirebaseAuth.instance.currentUser();
+    String uid = user.email;
      if ( fcmToken != null)
      {
        var tokenRef = _db

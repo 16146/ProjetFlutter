@@ -87,15 +87,15 @@ class HomePage extends StatelessWidget {
                     child: Text("Accéder aux fonctions admin",
                     style: TextStyle(color: Colors.white)),
                   ),
-                  RaisedButton(
-                    color: Colors.red[900],
-                    onPressed: () {
-                      Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => NotificationPermission()));
-                    },
-                    child: Text("Test Notif",
-                    style: TextStyle(color: Colors.white)),
-                  ),
+                  // RaisedButton(
+                  //   color: Colors.red[900],
+                  //   onPressed: () {
+                  //     Navigator.push(context,
+                  //         MaterialPageRoute(builder: (context) => NotificationPermission()));
+                  //   },
+                  //   child: Text("Test Notif",
+                  //   style: TextStyle(color: Colors.white)),
+                  // ),
                 ]
               ),
             ],
