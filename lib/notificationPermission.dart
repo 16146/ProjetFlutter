@@ -24,6 +24,46 @@ class _NotificationPermissionState extends State<NotificationPermission> {
     //_classes.dispose();
     super.dispose();
   }
+
+  @override
+  void initState() {
+    super.initState();
+    _fcm.configure(
+      onMessage:(Map<String, dynamic> message) async {
+        print("onMessage: $message");
+         final snackbar= SnackBar(
+           content: Text(message['notification']['title']),
+           action: SnackBarAction(
+             label: 'Go',
+             onPressed: ()=>null,
+           ),
+         );
+         Scaffold.of(context).showSnackBar(snackbar);
+        showDialog (
+          context: context,
+          builder : (context) => AlertDialog(
+            content: ListTile(
+              title: Text(message['notification']['title']),
+              subtitle: Text(message['notification']['body']),
+            ),
+            actions: <Widget>[
+              FlatButton(
+                child: Text('Ok'),
+                onPressed: () =>Navigator.of(context).pop(),
+              )
+            ],
+          )
+        );
+      },
+      onResume:(Map<String, dynamic> message) async {
+        print("onResume: $message");
+      },
+      onLaunch:(Map<String, dynamic> message) async {
+        print("onLaunch: $message");
+      },
+    );
+  }
+
   Iterable<int> range(int low, int high) sync* {
     for (int i = low; i < high; ++i) {
       yield i;
