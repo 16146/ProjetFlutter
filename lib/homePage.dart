@@ -2,12 +2,20 @@ import 'package:flare_flutter/flare_actor.dart';
 import 'package:flutter/material.dart';
 import 'package:grades/adminCodePage.dart';
 import 'package:grades/authService.dart';
+import 'package:grades/notificationPermission.dart';
+import 'package:grades/subscribeClass.dart';
 import 'studentListPage.dart';
 import 'avisList.dart';
 import 'testListPage.dart';
 
 class HomePage extends StatelessWidget {
   final AuthService _auth = AuthService();
+  
+  Future<void> _handleNotification (Map<dynamic, dynamic> message, bool dialog) async {
+    var data = message['data'] ?? message;
+    String expectedAttribute = data['expectedAttribute'];
+    /// [...]
+}
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -59,7 +67,7 @@ class HomePage extends StatelessWidget {
                     color: Colors.red[900],
                     onPressed: () {
                       Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => TestListPage()));
+                          MaterialPageRoute(builder: (context) => SubscribeClass()));
                     },
                     child: Text("S'inscrire à une classe",
                     style: TextStyle(color: Colors.white)),
@@ -76,6 +84,15 @@ class HomePage extends StatelessWidget {
                         MaterialPageRoute(builder: (context) => AdminCodePage()));
                     },
                     child: Text("Accéder aux fonctions admin",
+                    style: TextStyle(color: Colors.white)),
+                  ),
+                  RaisedButton(
+                    color: Colors.red[900],
+                    onPressed: () {
+                      Navigator.push(context,
+                          MaterialPageRoute(builder: (context) => NotificationPermission()));
+                    },
+                    child: Text("Test Notif",
                     style: TextStyle(color: Colors.white)),
                   ),
                 ]
