@@ -1,7 +1,10 @@
+import 'dart:io';
+
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
 import 'package:grades/classes.dart';
+import 'package:grades/user.dart';
 import 'package:grouped_buttons/grouped_buttons.dart';
 
 class NotificationPermission extends StatefulWidget {
@@ -62,7 +65,40 @@ class _NotificationPermissionState extends State<NotificationPermission> {
         print("onLaunch: $message");
       },
     );
+     
+    if (Platform.isIOS) {
+      var iosSubscription = _fcm.onIosSettingsRegistered.listen((data) {
+        _saveDeviceToken();
+      });
+      _fcm.requestNotificationPermissions(
+      IosNotificationSettings(),
+    );
+    
+    } else {
+      _saveDeviceToken();
+    }
   }
+///Get the token, save it to the database for current user
+  _saveDeviceToken() async {
+    String uid = 'jeffd23';
+    String fcmToken = await _fcm.getToken();
+     
+     if ( fcmToken != null)
+     {
+       var tokenRef = _db
+       .collection('users')
+       .document(uid)
+       .collection('tokens')
+       .document(fcmToken);
+       await tokenRef.setData({
+         'token' : fcmToken,
+          'platform': "Android"
+       });
+     }
+  }
+
+
+
 
   Iterable<int> range(int low, int high) sync* {
     for (int i = low; i < high; ++i) {
