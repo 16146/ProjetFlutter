@@ -4,11 +4,18 @@ import 'package:grades/adminCodePage.dart';
 import 'package:grades/authService.dart';
 import 'package:grades/notificationPermission.dart';
 import 'package:grades/subscribeClass.dart';
+import 'studentListPage.dart';
 import 'avisList.dart';
+import 'testListPage.dart';
 
 class HomePage extends StatelessWidget {
   final AuthService _auth = AuthService();
-
+  
+  Future<void> _handleNotification (Map<dynamic, dynamic> message, bool dialog) async {
+    var data = message['data'] ?? message;
+    String expectedAttribute = data['expectedAttribute'];
+    /// [...]
+}
   @override
   Widget build(BuildContext context) {
     return Scaffold(

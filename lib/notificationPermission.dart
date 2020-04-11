@@ -4,7 +4,6 @@ import 'package:flutter/material.dart';
 import 'package:grades/classes.dart';
 import 'package:grouped_buttons/grouped_buttons.dart';
 
-
 class NotificationPermission extends StatefulWidget {
   _NotificationPermissionState createState() => _NotificationPermissionState();
 }
@@ -16,10 +15,7 @@ class _NotificationPermissionState extends State<NotificationPermission> {
   final FirebaseMessaging _fcm = FirebaseMessaging();
   //final _classes = TextEditingController();
   var _classes = List() ;
-// See documentation on defining a message payload.
 
-// Send a message to the devices subscribed to the provided topic.
-// Response is a message ID string.
   String get checked => null;
   
   @override
@@ -33,19 +29,20 @@ class _NotificationPermissionState extends State<NotificationPermission> {
       yield i;
     }
   }
+
+
   Widget build(BuildContext context) {
-    //Firestore.instance.collection('classes').getDocuments().then((snapshot) => {
-      //for (final i in range(0, snapshot.documents.length)) {
-      //  _classes.add(snapshot.documents[i].documentID.toString()),
+    Firestore.instance.collection('classes').getDocuments().then((snapshot) => {
+      for (final i in range(0, snapshot.documents.length)) {
+        _classes.add(snapshot.documents[i].documentID.toString()),
         //print(i),
         //print(_classes[i]),
-      //},
-    //});
+      },
+    });
     print(_classes);
     print("EAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
     print(_classes);
     var liste = new List<String>.from(_classes);
-// Replace with server token from firebase console settings.
     return Scaffold(
       appBar: AppBar(
         title: Text("S'inscrire à une ou plusieurs classes"),
@@ -60,18 +57,14 @@ class _NotificationPermissionState extends State<NotificationPermission> {
             children: <Widget>[
                 FlatButton(
                 child: Text('I like puppies'),
-                onPressed: () => {
-                  _fcm.subscribeToTopic('puppies'),                }
+                onPressed: () => {_fcm.subscribeToTopic('puppies'),
+                _fcm.requestNotificationPermissions(),
+                }
             ),
 
             FlatButton(
                 child: Text('I hate puppies'),
                 onPressed: () => _fcm.unsubscribeFromTopic('puppies')
-            ),
-            FlatButton(
-                child: Text('Send'),
-                onPressed: () => {
-                }
             ),
                Expanded(
                   child: Column(
@@ -85,9 +78,9 @@ class _NotificationPermissionState extends State<NotificationPermission> {
                       hintText: 'Nouvelle description',
                     ),
                     validator: (value) {
-                      if (value.isEmpty) {
-                        return 'Please enter a description';
-                      }
+                      //if (value.isEmpty) {
+                      //  return 'Please enter a description';
+                      //}
                       return null;
                     },
                   ),
@@ -119,7 +112,7 @@ class _NotificationPermissionState extends State<NotificationPermission> {
                         //Navigator.pop(context);
                         print("mouk en bermuda");
                         print(checked);
-                        //_fcm.subscribeToTopic(checked);
+                        _fcm.subscribeToTopic(checked);
 
                       }
                     },
