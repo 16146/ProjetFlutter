@@ -109,11 +109,11 @@ class _NotificationPermissionState extends State<NotificationPermission> {
 
   Widget build(BuildContext context) {
     Firestore.instance.collection('classes').getDocuments().then((snapshot) => {
-      for (final i in range(0, snapshot.documents.length)) {
-        _classes.add(snapshot.documents[i].documentID.toString()),
+      //for (final i in range(0, snapshot.documents.length)) {
+      //  _classes.add(snapshot.documents[i].documentID.toString()),
         //print(i),
         //print(_classes[i]),
-      },
+      //},
     });
     print(_classes);
     print("EAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
