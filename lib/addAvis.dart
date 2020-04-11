@@ -1,7 +1,5 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
-import 'package:grades/classes.dart';
 import 'package:grouped_buttons/grouped_buttons.dart';
 
 class AddAvis extends StatefulWidget {
@@ -11,12 +9,15 @@ class AddAvis extends StatefulWidget {
 class _AddAvisState extends State<AddAvis> {
   final _formKey = GlobalKey<FormState>();
   final _description = TextEditingController();
-  final Firestore _db = Firestore.instance;
-  final FirebaseMessaging _fcm = FirebaseMessaging();
   //final _classes = TextEditingController();
-  var _classes = List() ;
-
-  var _checked = List(); 
+  var _classes = List();
+  bool monVal = false;
+  bool tuVal = false;
+  bool wedVal = false;
+  bool thurVal = false;
+  bool friVal = false;
+  bool satVal = false;
+  bool sunVal = false;
   
   @override
   void dispose() {
@@ -24,31 +25,13 @@ class _AddAvisState extends State<AddAvis> {
     //_classes.dispose();
     super.dispose();
   }
-  Iterable<int> range(int low, int high) sync* {
-    for (int i = low; i < high; ++i) {
-      yield i;
-    }
-  }
-
 
   Widget build(BuildContext context) {
-    Firestore.instance.collection('classes').getDocuments().then((snapshot) => {
-      for (final i in range(0, snapshot.documents.length)) {
-        _classes.add(snapshot.documents[i].documentID.toString()),
-        //print(i),
-        //print(_classes[i]),
-      },
-    });
-    print(_classes);
-    print("EAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
-    print(_classes);
-    var liste = new List<String>.from(_classes);
-    print(liste);
     return Scaffold(
+      
       appBar: AppBar(
         title: Text("Ajouter un avis"),
         backgroundColor: Color(0xFF7E0000),
-        
       ),
       body: Padding(
         padding: const EdgeInsets.symmetric(horizontal: 16.0, vertical: 8.0),
@@ -59,9 +42,7 @@ class _AddAvisState extends State<AddAvis> {
                Expanded(
                   child: Column(
                 children: <Widget>[
-
                   TextFormField(
-            
                     controller: _description,
                     decoration: const InputDecoration(
                       labelText: 'Description',
@@ -74,13 +55,30 @@ class _AddAvisState extends State<AddAvis> {
                       return null;
                     },
                   ),
+                  //TextFormField(
+                  //  controller: _classes,
+                  //  decoration: const InputDecoration(
+                  //    labelText: 'Classes',
+                  //    hintText: '1A',
+                   // ),
+                    //validator: (value) {
+                     // if (value.isEmpty) {
+                     //   return 'Please enter a class or more';
+                     // }
+                     // return null;
+                    //}
+                  //),
                   CheckboxGroup(
-                        labels: liste,
-                        onSelected: (List<String> checked) => [ 
-                        _checked=checked,
-                        print(_checked),
-                        print(checked),
-                        ]
+                        labels: <String>[
+                          "Sunday",
+                          "Monday",
+                          "Tuesday",
+                          "Wednesday",
+                          "Thursday",
+                          "Friday",
+                          "Saturday",
+                        ],
+                        onSelected: (List<String> checked) => [ print(checked.toString()),_classes = checked]
                       ),
                 ],
               )),
@@ -94,24 +92,19 @@ class _AddAvisState extends State<AddAvis> {
                     child: Text("Annuler"),
                   ),
                   RaisedButton(
-                    onPressed: () async {
-                      print(_checked);
-                      var classes = new List<String>.from(_checked);
-                      print(classes.toList());
+                    onPressed: () {
                       var test = {
-                        'Description':_description.text,
-                        'classes': classes,
+                        'Description': _description.text,
+                        'classes': _classes,
                       };
+                      print(test);
 
                       if (_formKey.currentState.validate()) {
                         Firestore.instance
                             .collection('avis')
                             .document()
                             .setData(test);
-
-                        //Navigator.pop(context);
-                        print("mouk en bermuda");
-                        print(_checked);
+                        Navigator.pop(context);
                       }
                     },
                     child: Text("Ajouter"),
