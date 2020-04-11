@@ -6,15 +6,12 @@ INJECTED from C:\Users\malek\OneDrive\Bureau\UEMobileApp\ProjetFlutter\android\a
 INJECTED from C:\Users\malek\OneDrive\Bureau\UEMobileApp\ProjetFlutter\android\app\src\main\AndroidManifest.xml:1:1-37:12
 MERGED from C:\Users\malek\OneDrive\Bureau\UEMobileApp\ProjetFlutter\android\app\src\main\AndroidManifest.xml:1:1-37:12
 MERGED from [:firebase_auth] C:\Users\malek\OneDrive\Bureau\UEMobileApp\ProjetFlutter\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-15:12
-MERGED from [:cloud_firestore] C:\Users\malek\OneDrive\Bureau\UEMobileApp\ProjetFlutter\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-15:12
-MERGED from [:cloud_firestore_web] C:\Users\malek\OneDrive\Bureau\UEMobileApp\ProjetFlutter\build\cloud_firestore_web\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
-MERGED from [:firebase_core] C:\Users\malek\OneDrive\Bureau\UEMobileApp\ProjetFlutter\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-15:12
-MERGED from [:firebase_core_web] C:\Users\malek\OneDrive\Bureau\UEMobileApp\ProjetFlutter\build\firebase_core_web\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
 MERGED from [:firebase_messaging] C:\Users\malek\OneDrive\Bureau\UEMobileApp\ProjetFlutter\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-20:12
-MERGED from [:flutter_local_notifications] C:\Users\malek\OneDrive\Bureau\UEMobileApp\ProjetFlutter\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
+MERGED from [:cloud_firestore] C:\Users\malek\OneDrive\Bureau\UEMobileApp\ProjetFlutter\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-15:12
 MERGED from [:path_provider] C:\Users\malek\OneDrive\Bureau\UEMobileApp\ProjetFlutter\build\path_provider\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-7:12
-MERGED from [com.google.firebase:firebase-auth:17.0.0] C:\Users\malek\.gradle\caches\transforms-2\files-2.1\ec25f04341307fe8c019f326be61cce2\jetified-firebase-auth-17.0.0\AndroidManifest.xml:17:1-42:12
+MERGED from [:firebase_core] C:\Users\malek\OneDrive\Bureau\UEMobileApp\ProjetFlutter\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:2:1-15:12
 MERGED from [com.google.firebase:firebase-messaging:20.0.1] C:\Users\malek\.gradle\caches\transforms-2\files-2.1\1c9434a7ed04d97342793bc152ed565e\jetified-firebase-messaging-20.0.1\AndroidManifest.xml:17:1-37:12
+MERGED from [com.google.firebase:firebase-auth:17.0.0] C:\Users\malek\.gradle\caches\transforms-2\files-2.1\ec25f04341307fe8c019f326be61cce2\jetified-firebase-auth-17.0.0\AndroidManifest.xml:17:1-42:12
 MERGED from [com.google.firebase:firebase-firestore:21.3.0] C:\Users\malek\.gradle\caches\transforms-2\files-2.1\49fd1b7c1d8c5071dce3ce1b068f5bf9\jetified-firebase-firestore-21.3.0\AndroidManifest.xml:2:1-26:12
 MERGED from [com.google.firebase:firebase-iid:20.0.1] C:\Users\malek\.gradle\caches\transforms-2\files-2.1\8ae3a27e5f765ecccfa84ccab34e1473\firebase-iid-20.0.1\AndroidManifest.xml:17:1-47:12
 MERGED from [com.google.firebase:firebase-auth-interop:18.0.0] C:\Users\malek\.gradle\caches\transforms-2\files-2.1\ff98db406dde5e0ef3217700c1c8d1dd\firebase-auth-interop-18.0.0\AndroidManifest.xml:2:1-10:12
@@ -27,7 +24,6 @@ MERGED from [com.google.firebase:firebase-measurement-connector:18.0.0] C:\Users
 MERGED from [com.google.android.gms:play-services-stats:17.0.0] C:\Users\malek\.gradle\caches\transforms-2\files-2.1\646fcaf19234d7b37b884114aa567eb2\play-services-stats-17.0.0\AndroidManifest.xml:2:1-9:12
 MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\malek\.gradle\caches\transforms-2\files-2.1\a3e137cc514fb8dcaaa2b7be67db5532\jetified-play-services-basement-17.0.0\AndroidManifest.xml:17:1-28:12
 MERGED from [androidx.fragment:fragment:1.0.0] C:\Users\malek\.gradle\caches\transforms-2\files-2.1\5157104f3bd9253cd81a7d6f29c1621c\fragment-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.media:media:1.1.0] C:\Users\malek\.gradle\caches\transforms-2\files-2.1\0330fa1606dbd2927998321d8a033742\media-1.1.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\malek\.gradle\caches\transforms-2\files-2.1\536c4d230adcf87aec8f00c8955f8127\legacy-support-core-ui-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\malek\.gradle\caches\transforms-2\files-2.1\d10fe1176fa5480b064486ece15f99c1\legacy-support-core-utils-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.loader:loader:1.0.0] C:\Users\malek\.gradle\caches\transforms-2\files-2.1\28c8df72e3e98cf2af337943db219b6d\loader-1.0.0\AndroidManifest.xml:17:1-22:12
@@ -38,14 +34,14 @@ MERGED from [androidx.slidingpanelayout:slidingpanelayout:1.0.0] C:\Users\malek\
 MERGED from [androidx.customview:customview:1.0.0] C:\Users\malek\.gradle\caches\transforms-2\files-2.1\31cd047ed3ec37dce69ba9f16e10a05d\customview-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\malek\.gradle\caches\transforms-2\files-2.1\5a5d53679d914b768463e606a8e8f920\swiperefreshlayout-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\malek\.gradle\caches\transforms-2\files-2.1\2ecca17b0eb70fcbc1e9d8148641257d\asynclayoutinflater-1.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.core:core:1.2.0] C:\Users\malek\.gradle\caches\transforms-2\files-2.1\35f29bb1a578f0319e9c3e21730b6b49\core-1.2.0\AndroidManifest.xml:17:1-26:12
+MERGED from [androidx.core:core:1.0.0] C:\Users\malek\.gradle\caches\transforms-2\files-2.1\c1da7862c7abb8e426855a3f78caf221\core-1.0.0\AndroidManifest.xml:17:1-24:12
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] C:\Users\malek\.gradle\caches\transforms-2\files-2.1\74d81cbab4baf82cd5ba855cad11f23d\lifecycle-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\malek\.gradle\caches\transforms-2\files-2.1\82b463c8584fb88ea5a1f562d740c4b7\lifecycle-livedata-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-livedata-core:2.0.0] C:\Users\malek\.gradle\caches\transforms-2\files-2.1\a78ce9b49fd39a3eac90624d04d1ee8a\lifecycle-livedata-core-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.localbroadcastmanager:localbroadcastmanager:1.0.0] C:\Users\malek\.gradle\caches\transforms-2\files-2.1\c8f4c2580dddd9ecf64fc10bf9fbc418\localbroadcastmanager-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\malek\.gradle\caches\transforms-2\files-2.1\3bf5fc05ca184d01c3bed36c84f7c6c7\core-runtime-2.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] C:\Users\malek\.gradle\caches\transforms-2\files-2.1\b652641e60f40536fdf44e18539d0968\lifecycle-viewmodel-2.0.0\AndroidManifest.xml:17:1-22:12
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\malek\.gradle\caches\transforms-2\files-2.1\4227c25f5adddf6ac1aa1a65c6b6f6a4\versionedparcelable-1.1.0\AndroidManifest.xml:17:1-27:12
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\malek\.gradle\caches\transforms-2\files-2.1\2ae0f4532ce9c2b2540e7c7daff54826\versionedparcelable-1.0.0\AndroidManifest.xml:17:1-25:12
 MERGED from [com.google.firebase:firebase-components:16.0.0] C:\Users\malek\.gradle\caches\transforms-2\files-2.1\38df4c61f32c327201e6708cbd78d520\jetified-firebase-components-16.0.0\AndroidManifest.xml:15:1-23:12
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\malek\.gradle\caches\transforms-2\files-2.1\b59192acc39c8e1083525bb1a0764fd3\interpolator-1.0.0\AndroidManifest.xml:17:1-22:12
 MERGED from [androidx.cursoradapter:cursoradapter:1.0.0] C:\Users\malek\.gradle\caches\transforms-2\files-2.1\07713a4b02ecb1ede5529340586b2906\cursoradapter-1.0.0\AndroidManifest.xml:17:1-22:12
@@ -83,16 +79,16 @@ application
 ADDED from C:\Users\malek\OneDrive\Bureau\UEMobileApp\ProjetFlutter\android\app\src\main\AndroidManifest.xml:10:5-36:19
 MERGED from [:firebase_auth] C:\Users\malek\OneDrive\Bureau\UEMobileApp\ProjetFlutter\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-13:19
 MERGED from [:firebase_auth] C:\Users\malek\OneDrive\Bureau\UEMobileApp\ProjetFlutter\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-13:19
+MERGED from [:firebase_messaging] C:\Users\malek\OneDrive\Bureau\UEMobileApp\ProjetFlutter\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-18:19
+MERGED from [:firebase_messaging] C:\Users\malek\OneDrive\Bureau\UEMobileApp\ProjetFlutter\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-18:19
 MERGED from [:cloud_firestore] C:\Users\malek\OneDrive\Bureau\UEMobileApp\ProjetFlutter\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-13:19
 MERGED from [:cloud_firestore] C:\Users\malek\OneDrive\Bureau\UEMobileApp\ProjetFlutter\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-13:19
 MERGED from [:firebase_core] C:\Users\malek\OneDrive\Bureau\UEMobileApp\ProjetFlutter\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-13:19
 MERGED from [:firebase_core] C:\Users\malek\OneDrive\Bureau\UEMobileApp\ProjetFlutter\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-13:19
-MERGED from [:firebase_messaging] C:\Users\malek\OneDrive\Bureau\UEMobileApp\ProjetFlutter\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-18:19
-MERGED from [:firebase_messaging] C:\Users\malek\OneDrive\Bureau\UEMobileApp\ProjetFlutter\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:7:5-18:19
-MERGED from [com.google.firebase:firebase-auth:17.0.0] C:\Users\malek\.gradle\caches\transforms-2\files-2.1\ec25f04341307fe8c019f326be61cce2\jetified-firebase-auth-17.0.0\AndroidManifest.xml:23:5-40:19
-MERGED from [com.google.firebase:firebase-auth:17.0.0] C:\Users\malek\.gradle\caches\transforms-2\files-2.1\ec25f04341307fe8c019f326be61cce2\jetified-firebase-auth-17.0.0\AndroidManifest.xml:23:5-40:19
 MERGED from [com.google.firebase:firebase-messaging:20.0.1] C:\Users\malek\.gradle\caches\transforms-2\files-2.1\1c9434a7ed04d97342793bc152ed565e\jetified-firebase-messaging-20.0.1\AndroidManifest.xml:22:5-35:19
 MERGED from [com.google.firebase:firebase-messaging:20.0.1] C:\Users\malek\.gradle\caches\transforms-2\files-2.1\1c9434a7ed04d97342793bc152ed565e\jetified-firebase-messaging-20.0.1\AndroidManifest.xml:22:5-35:19
+MERGED from [com.google.firebase:firebase-auth:17.0.0] C:\Users\malek\.gradle\caches\transforms-2\files-2.1\ec25f04341307fe8c019f326be61cce2\jetified-firebase-auth-17.0.0\AndroidManifest.xml:23:5-40:19
+MERGED from [com.google.firebase:firebase-auth:17.0.0] C:\Users\malek\.gradle\caches\transforms-2\files-2.1\ec25f04341307fe8c019f326be61cce2\jetified-firebase-auth-17.0.0\AndroidManifest.xml:23:5-40:19
 MERGED from [com.google.firebase:firebase-firestore:21.3.0] C:\Users\malek\.gradle\caches\transforms-2\files-2.1\49fd1b7c1d8c5071dce3ce1b068f5bf9\jetified-firebase-firestore-21.3.0\AndroidManifest.xml:16:5-24:19
 MERGED from [com.google.firebase:firebase-firestore:21.3.0] C:\Users\malek\.gradle\caches\transforms-2\files-2.1\49fd1b7c1d8c5071dce3ce1b068f5bf9\jetified-firebase-firestore-21.3.0\AndroidManifest.xml:16:5-24:19
 MERGED from [com.google.firebase:firebase-iid:20.0.1] C:\Users\malek\.gradle\caches\transforms-2\files-2.1\8ae3a27e5f765ecccfa84ccab34e1473\firebase-iid-20.0.1\AndroidManifest.xml:28:5-45:19
@@ -113,12 +109,12 @@ MERGED from [com.google.android.gms:play-services-stats:17.0.0] C:\Users\malek\.
 MERGED from [com.google.android.gms:play-services-stats:17.0.0] C:\Users\malek\.gradle\caches\transforms-2\files-2.1\646fcaf19234d7b37b884114aa567eb2\play-services-stats-17.0.0\AndroidManifest.xml:7:5-20
 MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\malek\.gradle\caches\transforms-2\files-2.1\a3e137cc514fb8dcaaa2b7be67db5532\jetified-play-services-basement-17.0.0\AndroidManifest.xml:22:5-26:19
 MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\malek\.gradle\caches\transforms-2\files-2.1\a3e137cc514fb8dcaaa2b7be67db5532\jetified-play-services-basement-17.0.0\AndroidManifest.xml:22:5-26:19
-MERGED from [androidx.core:core:1.2.0] C:\Users\malek\.gradle\caches\transforms-2\files-2.1\35f29bb1a578f0319e9c3e21730b6b49\core-1.2.0\AndroidManifest.xml:24:5-89
-MERGED from [androidx.core:core:1.2.0] C:\Users\malek\.gradle\caches\transforms-2\files-2.1\35f29bb1a578f0319e9c3e21730b6b49\core-1.2.0\AndroidManifest.xml:24:5-89
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\malek\.gradle\caches\transforms-2\files-2.1\4227c25f5adddf6ac1aa1a65c6b6f6a4\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\malek\.gradle\caches\transforms-2\files-2.1\4227c25f5adddf6ac1aa1a65c6b6f6a4\versionedparcelable-1.1.0\AndroidManifest.xml:24:5-25:19
+MERGED from [androidx.core:core:1.0.0] C:\Users\malek\.gradle\caches\transforms-2\files-2.1\c1da7862c7abb8e426855a3f78caf221\core-1.0.0\AndroidManifest.xml:22:5-89
+MERGED from [androidx.core:core:1.0.0] C:\Users\malek\.gradle\caches\transforms-2\files-2.1\c1da7862c7abb8e426855a3f78caf221\core-1.0.0\AndroidManifest.xml:22:5-89
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\malek\.gradle\caches\transforms-2\files-2.1\2ae0f4532ce9c2b2540e7c7daff54826\versionedparcelable-1.0.0\AndroidManifest.xml:22:5-23:19
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\malek\.gradle\caches\transforms-2\files-2.1\2ae0f4532ce9c2b2540e7c7daff54826\versionedparcelable-1.0.0\AndroidManifest.xml:22:5-23:19
 	android:appComponentFactory
-		ADDED from [androidx.core:core:1.2.0] C:\Users\malek\.gradle\caches\transforms-2\files-2.1\35f29bb1a578f0319e9c3e21730b6b49\core-1.2.0\AndroidManifest.xml:24:18-86
+		ADDED from [androidx.core:core:1.0.0] C:\Users\malek\.gradle\caches\transforms-2\files-2.1\c1da7862c7abb8e426855a3f78caf221\core-1.0.0\AndroidManifest.xml:22:18-86
 	android:label
 		ADDED from C:\Users\malek\OneDrive\Bureau\UEMobileApp\ProjetFlutter\android\app\src\main\AndroidManifest.xml:12:9-31
 	android:icon
@@ -171,24 +167,18 @@ INJECTED from C:\Users\malek\OneDrive\Bureau\UEMobileApp\ProjetFlutter\android\a
 INJECTED from C:\Users\malek\OneDrive\Bureau\UEMobileApp\ProjetFlutter\android\app\src\main\AndroidManifest.xml
 MERGED from [:firebase_auth] C:\Users\malek\OneDrive\Bureau\UEMobileApp\ProjetFlutter\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:firebase_auth] C:\Users\malek\OneDrive\Bureau\UEMobileApp\ProjetFlutter\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:cloud_firestore] C:\Users\malek\OneDrive\Bureau\UEMobileApp\ProjetFlutter\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:cloud_firestore] C:\Users\malek\OneDrive\Bureau\UEMobileApp\ProjetFlutter\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:cloud_firestore_web] C:\Users\malek\OneDrive\Bureau\UEMobileApp\ProjetFlutter\build\cloud_firestore_web\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:cloud_firestore_web] C:\Users\malek\OneDrive\Bureau\UEMobileApp\ProjetFlutter\build\cloud_firestore_web\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:firebase_core] C:\Users\malek\OneDrive\Bureau\UEMobileApp\ProjetFlutter\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:firebase_core] C:\Users\malek\OneDrive\Bureau\UEMobileApp\ProjetFlutter\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:firebase_core_web] C:\Users\malek\OneDrive\Bureau\UEMobileApp\ProjetFlutter\build\firebase_core_web\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:firebase_core_web] C:\Users\malek\OneDrive\Bureau\UEMobileApp\ProjetFlutter\build\firebase_core_web\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:firebase_messaging] C:\Users\malek\OneDrive\Bureau\UEMobileApp\ProjetFlutter\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:firebase_messaging] C:\Users\malek\OneDrive\Bureau\UEMobileApp\ProjetFlutter\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:flutter_local_notifications] C:\Users\malek\OneDrive\Bureau\UEMobileApp\ProjetFlutter\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [:flutter_local_notifications] C:\Users\malek\OneDrive\Bureau\UEMobileApp\ProjetFlutter\build\flutter_local_notifications\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:cloud_firestore] C:\Users\malek\OneDrive\Bureau\UEMobileApp\ProjetFlutter\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:cloud_firestore] C:\Users\malek\OneDrive\Bureau\UEMobileApp\ProjetFlutter\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:path_provider] C:\Users\malek\OneDrive\Bureau\UEMobileApp\ProjetFlutter\build\path_provider\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [:path_provider] C:\Users\malek\OneDrive\Bureau\UEMobileApp\ProjetFlutter\build\path_provider\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
-MERGED from [com.google.firebase:firebase-auth:17.0.0] C:\Users\malek\.gradle\caches\transforms-2\files-2.1\ec25f04341307fe8c019f326be61cce2\jetified-firebase-auth-17.0.0\AndroidManifest.xml:21:5-44
-MERGED from [com.google.firebase:firebase-auth:17.0.0] C:\Users\malek\.gradle\caches\transforms-2\files-2.1\ec25f04341307fe8c019f326be61cce2\jetified-firebase-auth-17.0.0\AndroidManifest.xml:21:5-44
+MERGED from [:firebase_core] C:\Users\malek\OneDrive\Bureau\UEMobileApp\ProjetFlutter\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
+MERGED from [:firebase_core] C:\Users\malek\OneDrive\Bureau\UEMobileApp\ProjetFlutter\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:5:5-44
 MERGED from [com.google.firebase:firebase-messaging:20.0.1] C:\Users\malek\.gradle\caches\transforms-2\files-2.1\1c9434a7ed04d97342793bc152ed565e\jetified-firebase-messaging-20.0.1\AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-messaging:20.0.1] C:\Users\malek\.gradle\caches\transforms-2\files-2.1\1c9434a7ed04d97342793bc152ed565e\jetified-firebase-messaging-20.0.1\AndroidManifest.xml:20:5-44
+MERGED from [com.google.firebase:firebase-auth:17.0.0] C:\Users\malek\.gradle\caches\transforms-2\files-2.1\ec25f04341307fe8c019f326be61cce2\jetified-firebase-auth-17.0.0\AndroidManifest.xml:21:5-44
+MERGED from [com.google.firebase:firebase-auth:17.0.0] C:\Users\malek\.gradle\caches\transforms-2\files-2.1\ec25f04341307fe8c019f326be61cce2\jetified-firebase-auth-17.0.0\AndroidManifest.xml:21:5-44
 MERGED from [com.google.firebase:firebase-firestore:21.3.0] C:\Users\malek\.gradle\caches\transforms-2\files-2.1\49fd1b7c1d8c5071dce3ce1b068f5bf9\jetified-firebase-firestore-21.3.0\AndroidManifest.xml:7:5-9:41
 MERGED from [com.google.firebase:firebase-firestore:21.3.0] C:\Users\malek\.gradle\caches\transforms-2\files-2.1\49fd1b7c1d8c5071dce3ce1b068f5bf9\jetified-firebase-firestore-21.3.0\AndroidManifest.xml:7:5-9:41
 MERGED from [com.google.firebase:firebase-iid:20.0.1] C:\Users\malek\.gradle\caches\transforms-2\files-2.1\8ae3a27e5f765ecccfa84ccab34e1473\firebase-iid-20.0.1\AndroidManifest.xml:20:5-44
@@ -213,8 +203,6 @@ MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\male
 MERGED from [com.google.android.gms:play-services-basement:17.0.0] C:\Users\malek\.gradle\caches\transforms-2\files-2.1\a3e137cc514fb8dcaaa2b7be67db5532\jetified-play-services-basement-17.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.fragment:fragment:1.0.0] C:\Users\malek\.gradle\caches\transforms-2\files-2.1\5157104f3bd9253cd81a7d6f29c1621c\fragment-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.fragment:fragment:1.0.0] C:\Users\malek\.gradle\caches\transforms-2\files-2.1\5157104f3bd9253cd81a7d6f29c1621c\fragment-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.media:media:1.1.0] C:\Users\malek\.gradle\caches\transforms-2\files-2.1\0330fa1606dbd2927998321d8a033742\media-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.media:media:1.1.0] C:\Users\malek\.gradle\caches\transforms-2\files-2.1\0330fa1606dbd2927998321d8a033742\media-1.1.0\AndroidManifest.xml:20:5-22:41
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\malek\.gradle\caches\transforms-2\files-2.1\536c4d230adcf87aec8f00c8955f8127\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-core-ui:1.0.0] C:\Users\malek\.gradle\caches\transforms-2\files-2.1\536c4d230adcf87aec8f00c8955f8127\legacy-support-core-ui-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.legacy:legacy-support-core-utils:1.0.0] C:\Users\malek\.gradle\caches\transforms-2\files-2.1\d10fe1176fa5480b064486ece15f99c1\legacy-support-core-utils-1.0.0\AndroidManifest.xml:20:5-44
@@ -235,8 +223,8 @@ MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\male
 MERGED from [androidx.swiperefreshlayout:swiperefreshlayout:1.0.0] C:\Users\malek\.gradle\caches\transforms-2\files-2.1\5a5d53679d914b768463e606a8e8f920\swiperefreshlayout-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\malek\.gradle\caches\transforms-2\files-2.1\2ecca17b0eb70fcbc1e9d8148641257d\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.asynclayoutinflater:asynclayoutinflater:1.0.0] C:\Users\malek\.gradle\caches\transforms-2\files-2.1\2ecca17b0eb70fcbc1e9d8148641257d\asynclayoutinflater-1.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.core:core:1.2.0] C:\Users\malek\.gradle\caches\transforms-2\files-2.1\35f29bb1a578f0319e9c3e21730b6b49\core-1.2.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.core:core:1.2.0] C:\Users\malek\.gradle\caches\transforms-2\files-2.1\35f29bb1a578f0319e9c3e21730b6b49\core-1.2.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.core:core:1.0.0] C:\Users\malek\.gradle\caches\transforms-2\files-2.1\c1da7862c7abb8e426855a3f78caf221\core-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.core:core:1.0.0] C:\Users\malek\.gradle\caches\transforms-2\files-2.1\c1da7862c7abb8e426855a3f78caf221\core-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] C:\Users\malek\.gradle\caches\transforms-2\files-2.1\74d81cbab4baf82cd5ba855cad11f23d\lifecycle-runtime-2.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-runtime:2.0.0] C:\Users\malek\.gradle\caches\transforms-2\files-2.1\74d81cbab4baf82cd5ba855cad11f23d\lifecycle-runtime-2.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-livedata:2.0.0] C:\Users\malek\.gradle\caches\transforms-2\files-2.1\82b463c8584fb88ea5a1f562d740c4b7\lifecycle-livedata-2.0.0\AndroidManifest.xml:20:5-44
@@ -249,8 +237,8 @@ MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\malek\.gradle\cache
 MERGED from [androidx.arch.core:core-runtime:2.0.0] C:\Users\malek\.gradle\caches\transforms-2\files-2.1\3bf5fc05ca184d01c3bed36c84f7c6c7\core-runtime-2.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] C:\Users\malek\.gradle\caches\transforms-2\files-2.1\b652641e60f40536fdf44e18539d0968\lifecycle-viewmodel-2.0.0\AndroidManifest.xml:20:5-44
 MERGED from [androidx.lifecycle:lifecycle-viewmodel:2.0.0] C:\Users\malek\.gradle\caches\transforms-2\files-2.1\b652641e60f40536fdf44e18539d0968\lifecycle-viewmodel-2.0.0\AndroidManifest.xml:20:5-44
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\malek\.gradle\caches\transforms-2\files-2.1\4227c25f5adddf6ac1aa1a65c6b6f6a4\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
-MERGED from [androidx.versionedparcelable:versionedparcelable:1.1.0] C:\Users\malek\.gradle\caches\transforms-2\files-2.1\4227c25f5adddf6ac1aa1a65c6b6f6a4\versionedparcelable-1.1.0\AndroidManifest.xml:20:5-22:41
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\malek\.gradle\caches\transforms-2\files-2.1\2ae0f4532ce9c2b2540e7c7daff54826\versionedparcelable-1.0.0\AndroidManifest.xml:20:5-44
+MERGED from [androidx.versionedparcelable:versionedparcelable:1.0.0] C:\Users\malek\.gradle\caches\transforms-2\files-2.1\2ae0f4532ce9c2b2540e7c7daff54826\versionedparcelable-1.0.0\AndroidManifest.xml:20:5-44
 MERGED from [com.google.firebase:firebase-components:16.0.0] C:\Users\malek\.gradle\caches\transforms-2\files-2.1\38df4c61f32c327201e6708cbd78d520\jetified-firebase-components-16.0.0\AndroidManifest.xml:19:5-21:41
 MERGED from [com.google.firebase:firebase-components:16.0.0] C:\Users\malek\.gradle\caches\transforms-2\files-2.1\38df4c61f32c327201e6708cbd78d520\jetified-firebase-components-16.0.0\AndroidManifest.xml:19:5-21:41
 MERGED from [androidx.interpolator:interpolator:1.0.0] C:\Users\malek\.gradle\caches\transforms-2\files-2.1\b59192acc39c8e1083525bb1a0764fd3\interpolator-1.0.0\AndroidManifest.xml:20:5-44
@@ -285,12 +273,12 @@ MERGED from [com.google.firebase:firebase-iid:20.0.1] C:\Users\malek\.gradle\cac
 		ADDED from C:\Users\malek\OneDrive\Bureau\UEMobileApp\ProjetFlutter\android\app\src\debug\AndroidManifest.xml:6:22-64
 service#com.google.firebase.components.ComponentDiscoveryService
 ADDED from [:firebase_auth] C:\Users\malek\OneDrive\Bureau\UEMobileApp\ProjetFlutter\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-12:19
+MERGED from [:firebase_messaging] C:\Users\malek\OneDrive\Bureau\UEMobileApp\ProjetFlutter\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:13:9-17:19
+MERGED from [:firebase_messaging] C:\Users\malek\OneDrive\Bureau\UEMobileApp\ProjetFlutter\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:13:9-17:19
 MERGED from [:cloud_firestore] C:\Users\malek\OneDrive\Bureau\UEMobileApp\ProjetFlutter\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-12:19
 MERGED from [:cloud_firestore] C:\Users\malek\OneDrive\Bureau\UEMobileApp\ProjetFlutter\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-12:19
 MERGED from [:firebase_core] C:\Users\malek\OneDrive\Bureau\UEMobileApp\ProjetFlutter\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-12:19
 MERGED from [:firebase_core] C:\Users\malek\OneDrive\Bureau\UEMobileApp\ProjetFlutter\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-12:19
-MERGED from [:firebase_messaging] C:\Users\malek\OneDrive\Bureau\UEMobileApp\ProjetFlutter\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:13:9-17:19
-MERGED from [:firebase_messaging] C:\Users\malek\OneDrive\Bureau\UEMobileApp\ProjetFlutter\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:13:9-17:19
 MERGED from [com.google.firebase:firebase-auth:17.0.0] C:\Users\malek\.gradle\caches\transforms-2\files-2.1\ec25f04341307fe8c019f326be61cce2\jetified-firebase-auth-17.0.0\AndroidManifest.xml:33:9-39:19
 MERGED from [com.google.firebase:firebase-auth:17.0.0] C:\Users\malek\.gradle\caches\transforms-2\files-2.1\ec25f04341307fe8c019f326be61cce2\jetified-firebase-auth-17.0.0\AndroidManifest.xml:33:9-39:19
 MERGED from [com.google.firebase:firebase-firestore:21.3.0] C:\Users\malek\.gradle\caches\transforms-2\files-2.1\49fd1b7c1d8c5071dce3ce1b068f5bf9\jetified-firebase-firestore-21.3.0\AndroidManifest.xml:17:9-23:19
@@ -313,18 +301,6 @@ ADDED from [:firebase_auth] C:\Users\malek\OneDrive\Bureau\UEMobileApp\ProjetFlu
 		ADDED from [:firebase_auth] C:\Users\malek\OneDrive\Bureau\UEMobileApp\ProjetFlutter\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
 	android:name
 		ADDED from [:firebase_auth] C:\Users\malek\OneDrive\Bureau\UEMobileApp\ProjetFlutter\build\firebase_auth\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-122
-meta-data#com.google.firebase.components:io.flutter.plugins.firebase.cloudfirestore.FlutterFirebaseAppRegistrar
-ADDED from [:cloud_firestore] C:\Users\malek\OneDrive\Bureau\UEMobileApp\ProjetFlutter\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
-	android:value
-		ADDED from [:cloud_firestore] C:\Users\malek\OneDrive\Bureau\UEMobileApp\ProjetFlutter\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
-	android:name
-		ADDED from [:cloud_firestore] C:\Users\malek\OneDrive\Bureau\UEMobileApp\ProjetFlutter\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-133
-meta-data#com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseAppRegistrar
-ADDED from [:firebase_core] C:\Users\malek\OneDrive\Bureau\UEMobileApp\ProjetFlutter\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
-	android:value
-		ADDED from [:firebase_core] C:\Users\malek\OneDrive\Bureau\UEMobileApp\ProjetFlutter\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
-	android:name
-		ADDED from [:firebase_core] C:\Users\malek\OneDrive\Bureau\UEMobileApp\ProjetFlutter\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-123
 service#io.flutter.plugins.firebasemessaging.FlutterFirebaseMessagingService
 ADDED from [:firebase_messaging] C:\Users\malek\OneDrive\Bureau\UEMobileApp\ProjetFlutter\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:8:9-12:19
 	android:name
@@ -341,6 +317,24 @@ ADDED from [:firebase_messaging] C:\Users\malek\OneDrive\Bureau\UEMobileApp\Proj
 		ADDED from [:firebase_messaging] C:\Users\malek\OneDrive\Bureau\UEMobileApp\ProjetFlutter\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:16:17-82
 	android:name
 		ADDED from [:firebase_messaging] C:\Users\malek\OneDrive\Bureau\UEMobileApp\ProjetFlutter\build\firebase_messaging\intermediates\library_manifest\debug\AndroidManifest.xml:15:17-127
+meta-data#com.google.firebase.components:io.flutter.plugins.firebase.cloudfirestore.FlutterFirebaseAppRegistrar
+ADDED from [:cloud_firestore] C:\Users\malek\OneDrive\Bureau\UEMobileApp\ProjetFlutter\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
+	android:value
+		ADDED from [:cloud_firestore] C:\Users\malek\OneDrive\Bureau\UEMobileApp\ProjetFlutter\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
+	android:name
+		ADDED from [:cloud_firestore] C:\Users\malek\OneDrive\Bureau\UEMobileApp\ProjetFlutter\build\cloud_firestore\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-133
+meta-data#com.google.firebase.components:io.flutter.plugins.firebase.core.FlutterFirebaseAppRegistrar
+ADDED from [:firebase_core] C:\Users\malek\OneDrive\Bureau\UEMobileApp\ProjetFlutter\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:9:13-11:85
+	android:value
+		ADDED from [:firebase_core] C:\Users\malek\OneDrive\Bureau\UEMobileApp\ProjetFlutter\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:11:17-82
+	android:name
+		ADDED from [:firebase_core] C:\Users\malek\OneDrive\Bureau\UEMobileApp\ProjetFlutter\build\firebase_core\intermediates\library_manifest\debug\AndroidManifest.xml:10:17-123
+service#com.google.firebase.messaging.FirebaseMessagingService
+ADDED from [com.google.firebase:firebase-messaging:20.0.1] C:\Users\malek\.gradle\caches\transforms-2\files-2.1\1c9434a7ed04d97342793bc152ed565e\jetified-firebase-messaging-20.0.1\AndroidManifest.xml:28:9-34:19
+	android:exported
+		ADDED from [com.google.firebase:firebase-messaging:20.0.1] C:\Users\malek\.gradle\caches\transforms-2\files-2.1\1c9434a7ed04d97342793bc152ed565e\jetified-firebase-messaging-20.0.1\AndroidManifest.xml:30:13-37
+	android:name
+		ADDED from [com.google.firebase:firebase-messaging:20.0.1] C:\Users\malek\.gradle\caches\transforms-2\files-2.1\1c9434a7ed04d97342793bc152ed565e\jetified-firebase-messaging-20.0.1\AndroidManifest.xml:29:13-82
 activity#com.google.firebase.auth.internal.FederatedSignInActivity
 ADDED from [com.google.firebase:firebase-auth:17.0.0] C:\Users\malek\.gradle\caches\transforms-2\files-2.1\ec25f04341307fe8c019f326be61cce2\jetified-firebase-auth-17.0.0\AndroidManifest.xml:24:9-31:50
 	android:excludeFromRecents
@@ -363,12 +357,6 @@ ADDED from [com.google.firebase:firebase-auth:17.0.0] C:\Users\malek\.gradle\cac
 		ADDED from [com.google.firebase:firebase-auth:17.0.0] C:\Users\malek\.gradle\caches\transforms-2\files-2.1\ec25f04341307fe8c019f326be61cce2\jetified-firebase-auth-17.0.0\AndroidManifest.xml:38:17-82
 	android:name
 		ADDED from [com.google.firebase:firebase-auth:17.0.0] C:\Users\malek\.gradle\caches\transforms-2\files-2.1\ec25f04341307fe8c019f326be61cce2\jetified-firebase-auth-17.0.0\AndroidManifest.xml:37:17-109
-service#com.google.firebase.messaging.FirebaseMessagingService
-ADDED from [com.google.firebase:firebase-messaging:20.0.1] C:\Users\malek\.gradle\caches\transforms-2\files-2.1\1c9434a7ed04d97342793bc152ed565e\jetified-firebase-messaging-20.0.1\AndroidManifest.xml:28:9-34:19
-	android:exported
-		ADDED from [com.google.firebase:firebase-messaging:20.0.1] C:\Users\malek\.gradle\caches\transforms-2\files-2.1\1c9434a7ed04d97342793bc152ed565e\jetified-firebase-messaging-20.0.1\AndroidManifest.xml:30:13-37
-	android:name
-		ADDED from [com.google.firebase:firebase-messaging:20.0.1] C:\Users\malek\.gradle\caches\transforms-2\files-2.1\1c9434a7ed04d97342793bc152ed565e\jetified-firebase-messaging-20.0.1\AndroidManifest.xml:29:13-82
 uses-permission#android.permission.ACCESS_NETWORK_STATE
 ADDED from [com.google.firebase:firebase-firestore:21.3.0] C:\Users\malek\.gradle\caches\transforms-2\files-2.1\49fd1b7c1d8c5071dce3ce1b068f5bf9\jetified-firebase-firestore-21.3.0\AndroidManifest.xml:13:5-79
 MERGED from [com.google.firebase:firebase-iid:20.0.1] C:\Users\malek\.gradle\caches\transforms-2\files-2.1\8ae3a27e5f765ecccfa84ccab34e1473\firebase-iid-20.0.1\AndroidManifest.xml:22:5-79
