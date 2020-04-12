@@ -109,7 +109,7 @@ class _AddAvisState extends State<AddAvis> {
                       if (_formKey.currentState.validate()) {
                         Firestore.instance
                             .collection('avis')
-                            .document("glou")
+                            .document()
                             .setData(test);
 
                         Navigator.pop(context);
