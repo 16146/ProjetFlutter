@@ -4,8 +4,8 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
-import 'package:grades/classes.dart';
-import 'package:grades/user.dart';
+import 'package:grades/models/classes.dart';
+import 'package:grades/models/user.dart';
 import 'package:grouped_buttons/grouped_buttons.dart';
 
 class NotificationPermission extends StatefulWidget {

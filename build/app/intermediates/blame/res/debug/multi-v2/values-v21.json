@@ -1,10 +1,10 @@
 {
     "logs": [
         {
-            "outputFile": "C:\\Users\\malek\\OneDrive\\Bureau\\UEMobileApp\\ProjetFlutter\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v21\\values-v21.xml",
+            "outputFile": "C:\\Users\\yelba\\Documents\\ECAM\\MA1\\App_mobile\\ProjetFlutter\\build\\app\\intermediates\\incremental\\mergeDebugResources\\merged.dir\\values-v21\\values-v21.xml",
             "map": [
                 {
-                    "source": "C:\\Users\\malek\\.gradle\\caches\\transforms-2\\files-2.1\\35f29bb1a578f0319e9c3e21730b6b49\\core-1.2.0\\res\\values-v21\\values-v21.xml",
+                    "source": "C:\\Users\\yelba\\.gradle\\caches\\transforms-2\\files-2.1\\35f29bb1a578f0319e9c3e21730b6b49\\core-1.2.0\\res\\values-v21\\values-v21.xml",
                     "from": {
                         "startLines": "2,3,4,5,6,7,8,9,10,13",
                         "startColumns": "4,4,4,4,4,4,4,4,4,4",
@@ -23,7 +23,7 @@
                     }
                 },
                 {
-                    "source": "C:\\Users\\malek\\.gradle\\caches\\transforms-2\\files-2.1\\0330fa1606dbd2927998321d8a033742\\media-1.1.0\\res\\values-v21\\values-v21.xml",
+                    "source": "C:\\Users\\yelba\\.gradle\\caches\\transforms-2\\files-2.1\\0330fa1606dbd2927998321d8a033742\\media-1.1.0\\res\\values-v21\\values-v21.xml",
                     "from": {
                         "startLines": "2,5,8,11",
                         "startColumns": "4,4,4,4",

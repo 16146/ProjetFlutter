@@ -1,11 +1,8 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
-import 'package:grades/addStudentPage.dart';
-import 'package:grades/addAvis.dart';
-import 'package:grades/classes.dart';
-import 'student.dart';
-import 'avis.dart';
+import 'package:grades/models/classes.dart';
+import 'package:grades/models/avis.dart';
 
 
 class SubscribeClass extends StatefulWidget {
