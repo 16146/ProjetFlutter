@@ -26,28 +26,8 @@ class _AddAvisState extends State<AddAvis> {
     _description.dispose();
     super.dispose();
   }
-  // Iterable<int> range(int low, int high) sync* {
-  //   for (int i = low; i < high; ++i) {
-  //     yield i;
-  //   }
-  // }
-
-  // @override
-  // void initState()  {
-  //   super.initState();
-  //    Firestore.instance.collection('classes').getDocuments().then((snapshot) => {
-  //      _classes=List(),
-  //     for (final i in range(0, snapshot.documents.length)) {
-  //       _classes.add(snapshot.documents[i].documentID.toString()),
-  //       print(_classes[i]),
-  //     },
-  //   });
-  // }
 
   Widget build(BuildContext context) {
-    //print(_classes);
-    //var liste = new List<String>.from(classes);
-    //print(liste);
     return Scaffold(
       appBar: AppBar(
         title: Text("Ajouter un avis"),
