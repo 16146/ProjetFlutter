@@ -16,7 +16,7 @@ export const sendToTopic = functions.firestore
             const payload: admin.messaging.MessagingPayload = {
                 notification: {
                   title: `Classe ${classe} : Nouvel avis!`,
-                  body: `Description : ${avis.Description}`,
+                  body: `Description : ${avis.description}`,
                   icon: 'your-icon-url',
                   click_action: 'FLUTTER_NOTIFICATION_CLICK' // required only for onResume or onLaunch callbacks
                 }

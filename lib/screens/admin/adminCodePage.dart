@@ -51,7 +51,16 @@ class _AdminCodePageState extends State<AdminCodePage> {
                         borderSide: BorderSide(color: Colors.red, width: 2.0)
                       ),        
                     ),
-                    validator: (value) => value == '0000' ? "Code invalide" : null
+                    validator: (value) 
+                    {
+                      if (value.isEmpty) {
+                        return 'Veuiller entrer un code valide';
+                      } else if (value != "0000") {
+
+                        return 'Code invalide';
+                      }
+                      return null;
+                    }
                   ),
                 ],
               )),
@@ -64,24 +73,23 @@ class _AdminCodePageState extends State<AdminCodePage> {
                       Navigator.pop(context);
                     },
                     child: Text("Retour au menu principal",
-                    style: TextStyle(color: Colors.white)),
+                    style: TextStyle(color: Colors.white,
+                    fontSize: 17.0,
+                    fontWeight: FontWeight.bold)),
                   ),
                   RaisedButton(
                     color: Colors.red[900],
                     onPressed: () {
-                      //var student = {
-                      //  'firstname': "_firstnameController.text",
-                     // };
-
-                      //var matricule = "_matriculeController.text";
-
                       if (_formKey.currentState.validate()) {
                         Navigator.push(context,
                         MaterialPageRoute(builder: (context) => AdminPage()));
                       }
                     },
                     child: Text("Accéder",
-                    style: TextStyle(color: Colors.white)),
+                    style: TextStyle(color: Colors.white,
+                    fontSize: 17.0,
+                    fontWeight: FontWeight.bold,
+                    )),
                   ),
                 ],
               ),

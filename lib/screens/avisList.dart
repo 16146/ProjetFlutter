@@ -16,13 +16,13 @@ class _AvisList extends State<AvisList> {
     return Scaffold(
       appBar: AppBar(title: Text('Liste des avis'), backgroundColor: Color(0xFF7E0000),),
       body: _buildBody(context),
-      floatingActionButton: FloatingActionButton(
-        onPressed: () {
-          Navigator.push(context,
-              MaterialPageRoute(builder: (context) => AddAvis()));
-        },
-        child: Icon(Icons.add),
-      ),
+      // floatingActionButton: FloatingActionButton(
+      //   onPressed: () {
+      //     Navigator.push(context,
+      //         MaterialPageRoute(builder: (context) => AddAvis()));
+      //   },
+      //   child: Icon(Icons.add),
+      // ),
     );
   }
 

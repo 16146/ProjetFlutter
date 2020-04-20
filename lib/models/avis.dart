@@ -7,7 +7,7 @@ class Avis {
 
   Avis(DocumentSnapshot snapshot)
     : id = snapshot.documentID,
-      description = snapshot.data['Description'],
+      description = snapshot.data['description'],
       classes = snapshot.data['classes'] ;
 
   String get _description => "$description";

@@ -2,7 +2,7 @@ import 'package:flare_flutter/flare_actor.dart';
 import 'package:flutter/material.dart';
 import 'package:grades/screens/admin/adminCodePage.dart';
 import 'package:grades/services/authService.dart';
-import 'package:grades/subscribeClass.dart';
+import 'package:grades/screens/subscribeClass.dart';
 import 'package:grades/screens/avisList.dart';
 
 class HomePage extends StatelessWidget {
@@ -37,6 +37,28 @@ class HomePage extends StatelessWidget {
           child: new Container(
             margin: EdgeInsets.fromLTRB(10.0, 20.0, 10.0, 10.0),
             child: new Column( children: <Widget>[
+              Container(
+                width: 400,
+                child: Text(                  
+                  "Bienvenue sur l'application officielle de l'Ecole Sud d'Arthedain. \n Accéder sans plus attendre aux fonctionnalités de l'application !",
+                  overflow: TextOverflow.ellipsis,
+                  maxLines: 5,
+                  textAlign: TextAlign.center,
+                  style: TextStyle(color: Colors.black,fontSize: 17.0, fontWeight: FontWeight.bold,),
+                ),
+                alignment: Alignment.center,
+                margin: new EdgeInsets.all(20.0),
+                decoration: BoxDecoration(
+                  color: Colors.white,
+                  border: Border.all(
+                    color: Colors.red[900],                   
+                    width: 2.0,
+                  ),
+                  borderRadius: BorderRadius.all(
+                      Radius.circular(25.0)                 
+                  ),
+                ),
+              ),
               AspectRatio(
                 aspectRatio: 1,
                 child: FlareActor(
@@ -53,7 +75,7 @@ class HomePage extends StatelessWidget {
                   RaisedButton(
                     color: Colors.red[900],
                     child: Text('Afficher les avis',
-                    style: TextStyle(color: Colors.white)),
+                    style: TextStyle(color: Colors.white,fontSize: 17.0,)),
                     onPressed: () {
                       Navigator.push(
                           context,
@@ -67,8 +89,8 @@ class HomePage extends StatelessWidget {
                       Navigator.push(context,
                           MaterialPageRoute(builder: (context) => SubscribeClass()));
                     },
-                    child: Text("S'inscrire à une classe",
-                    style: TextStyle(color: Colors.white)),
+                    child: Text("S'abonner à une classe",
+                    style: TextStyle(color: Colors.white,fontSize: 17.0,)),
                   ),
                 ],
               ),
@@ -82,7 +104,7 @@ class HomePage extends StatelessWidget {
                         MaterialPageRoute(builder: (context) => AdminCodePage()));
                     },
                     child: Text("Accéder aux fonctions admin",
-                    style: TextStyle(color: Colors.white)),
+                    style: TextStyle(color: Colors.white,fontSize: 17.0,)),
                   ),
                   // RaisedButton(
                   //   color: Colors.red[900],
