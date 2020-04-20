@@ -40,7 +40,7 @@ class HomePage extends StatelessWidget {
               Container(
                 width: 400,
                 child: Text(                  
-                  "Bienvenue sur l'application officielle de l'Ecole Sud d'Arthedain. \n Accéder sans plus attendre aux fonctionnalités de l'application !",
+                  "Bienvenue sur l'application officielle de l'Ecole Sud d'Arthedain. \n Accédez sans plus attendre aux fonctionnalités de l'application !",
                   overflow: TextOverflow.ellipsis,
                   maxLines: 5,
                   textAlign: TextAlign.center,
@@ -106,15 +106,6 @@ class HomePage extends StatelessWidget {
                     child: Text("Accéder aux fonctions admin",
                     style: TextStyle(color: Colors.white,fontSize: 17.0,)),
                   ),
-                  // RaisedButton(
-                  //   color: Colors.red[900],
-                  //   onPressed: () {
-                  //     Navigator.push(context,
-                  //         MaterialPageRoute(builder: (context) => NotificationPermission()));
-                  //   },
-                  //   child: Text("Test Notif",
-                  //   style: TextStyle(color: Colors.white)),
-                  // ),
                 ]
               ),
             ],

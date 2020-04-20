@@ -19,7 +19,6 @@ class AdminPage extends StatelessWidget {
       backgroundColor: Colors.grey,
       appBar: AppBar(
         title: Text("Page Admin"),
-        //COlor obligé 0XFF + color Hex (6 bits)
         backgroundColor: Color(0xFF7E0000),
         actions: <Widget>[
           FlatButton.icon(
@@ -60,39 +59,42 @@ class AdminPage extends StatelessWidget {
                   ),
                 ],
                 ),
-              Row ( 
-                mainAxisAlignment: MainAxisAlignment.spaceAround,
-                children: <Widget>[
-                  RaisedButton(
-                    color: Colors.red[900],
-                    onPressed: () {
-                      Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => EditClassList()));
-                    },
-                    child: Text("Gérer les classes",
-                    style: TextStyle(color: Colors.white,
-                    fontSize:25.0)),
-                  ),
-                ],
-              ),
-              Row ( 
-                mainAxisAlignment: MainAxisAlignment.spaceAround,
-                children: <Widget>[
-                  RaisedButton(
-                    color: Colors.black,
-                    onPressed: () {
-                      Navigator.push(context,
-                        MaterialPageRoute(builder: (context) => HomePage())
-                        );
-                    },
-                    child: Text("Retour",
-                    style: TextStyle(color: Colors.white,
-                    fontSize:25.0)),
-                  ),
-                ]
-              ),
-            ],
-          ),
-      )  )));
+                Row ( 
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  children: <Widget>[
+                    RaisedButton(
+                      color: Colors.red[900],
+                      onPressed: () {
+                        Navigator.push(context,
+                            MaterialPageRoute(builder: (context) => EditClassList()));
+                      },
+                      child: Text("Gérer les classes",
+                      style: TextStyle(color: Colors.white,
+                      fontSize:25.0)
+                      ),
+                    ),
+                  ],
+                ),
+                Row ( 
+                  mainAxisAlignment: MainAxisAlignment.spaceAround,
+                  children: <Widget>[
+                    RaisedButton(
+                      color: Colors.black,
+                      onPressed: () {
+                        Navigator.popUntil(context, ModalRoute.withName('/'));
+                      },
+                      child: Text("Retour",
+                      style: TextStyle(color: Colors.white,
+                      fontSize:25.0)
+                      ),
+                    ),
+                  ]
+                ),
+              ],
+            ),
+          )  
+        )
+      )
+    );
   }
 }
