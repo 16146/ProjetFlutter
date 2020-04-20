@@ -11,6 +11,7 @@ class AddAvis extends StatefulWidget {
 
 class _AddAvisState extends State<AddAvis> {
   final _formKey = GlobalKey<FormState>();
+  final _titre = TextEditingController();
   final _description = TextEditingController();
   // final Firestore _db = Firestore.instance;
   // final FirebaseMessaging _fcm = FirebaseMessaging();
@@ -21,6 +22,7 @@ class _AddAvisState extends State<AddAvis> {
 
   @override
   void dispose() {
+    _titre.dispose();
     _description.dispose();
     super.dispose();
   }
@@ -40,6 +42,19 @@ class _AddAvisState extends State<AddAvis> {
                   child: Column(
                   children: <Widget>[
                     TextFormField(
+                      controller: _titre,
+                      decoration: const InputDecoration(
+                        labelText: "Titre de l'avis",
+                        hintText: 'Avis Important',
+                      ),
+                      validator: (value) {
+                        if (value.isEmpty) {
+                          return 'Entrer un titre (court)';
+                        }
+                        return null;
+                    },
+                  ),
+                    TextFormField(
                       controller: _description,
                       decoration: const InputDecoration(
                         labelText: "Description de l'avis",
@@ -47,7 +62,7 @@ class _AddAvisState extends State<AddAvis> {
                       ),
                       validator: (value) {
                         if (value.isEmpty) {
-                          return 'Please enter a description';
+                          return 'Entrer une description';
                         }
                         return null;
                     },
@@ -75,6 +90,7 @@ class _AddAvisState extends State<AddAvis> {
                       print(_checked);
                       var classesChosen = new List<String>.from(_checked);
                       var test = {
+                        'titre': _titre.text,
                         'description':_description.text,
                         'classes': classesChosen,
                       };

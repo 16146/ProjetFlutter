@@ -55,11 +55,24 @@ class _AvisList extends State<AvisList> {
           borderRadius: BorderRadius.circular(5.0),
         ),
         child: ListTile(
-          title: Text(avis.description),
+          title: Text(avis.titre),
           trailing: Text((avis.classes).toString()),
-          onTap: () => print(avis),
+          onTap: () => showDialog (
+          context: context,
+          builder : (context) => AlertDialog(
+            content: ListTile(
+              title: Text(avis.titre),
+              subtitle: Text(avis.description),
+            ),
+            actions: <Widget>[
+              FlatButton(
+                child: Text('Ok'),
+                onPressed: () =>Navigator.of(context).pop(),
+              )
+            ],
+          ),
         ),
       ),
-    );
+    ));
   }
 }

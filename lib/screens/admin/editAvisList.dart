@@ -74,7 +74,7 @@ class _AvisListAdmin extends State<AvisListAdmin> {
         child: ListTile(
           title: Row( mainAxisAlignment: MainAxisAlignment.spaceAround,
                 children: <Widget>[
-                  Text(avis.description),
+                  Text(avis.titre),
                   Text((avis.classes).toString()),]
           ),
           subtitle: RaisedButton(
@@ -85,9 +85,27 @@ class _AvisListAdmin extends State<AvisListAdmin> {
             onPressed: () {
               Firestore.instance.collection("avis").document(avis.id).delete();}
           ),
-          onTap: () => print(avis),
+          onTap: () =>
+          showDialog (
+          context: context,
+          builder : (context) => AlertDialog(
+            content: ListTile(
+              title: Row( mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: <Widget>[
+                  Text(avis.titre),
+                  Text((avis.classes).toString()),]
+          ),
+              subtitle: Text(avis.description),
+            ),
+            actions: <Widget>[
+              FlatButton(
+                child: Text('Ok'),
+                onPressed: () =>Navigator.of(context).pop(),
+              )
+            ],
+          ),
         ),
       ),
-    );
+    ));
   }
 }
