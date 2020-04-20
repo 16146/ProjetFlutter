@@ -14,7 +14,7 @@ class _EditClassList extends State<EditClassList> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      appBar: AppBar(title: Text('Liste des avis'), backgroundColor: Color(0xFF7E0000),),
+      appBar: AppBar(title: Text('Liste des classes'), backgroundColor: Color(0xFF7E0000),),
       body: _buildBody(context),
       floatingActionButton: FloatingActionButton(
         backgroundColor: Colors.red[900],
@@ -57,10 +57,14 @@ class _EditClassList extends State<EditClassList> {
           borderRadius: BorderRadius.circular(5.0),
         ),
         child: ListTile(
-          title: Text(classe.nom),
-          trailing: Text("Professeur " + (classe.professeur).toString()),
+          title: 
+          Row( mainAxisAlignment: MainAxisAlignment.spaceAround,
+                children: <Widget>[
+                  Text(classe.nom),
+                  Text("Professeur " + (classe.professeur).toString()),]
+          ),
           subtitle: RaisedButton(
-            color: Colors.red[900],
+            color: Colors.black,
             child: Text("Supprimer la classe",
             style: TextStyle(color: Colors.white)),
             onPressed: () {

@@ -1,21 +1,14 @@
-import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
-import 'package:grades/screens/admin/addAvis.dart';
+import 'package:grades/screens/admin/editAvisList.dart';
 import 'package:grades/screens/admin/editClassList.dart';
 import 'package:grades/services/authService.dart';
-
-Iterable<int> range(int low, int high) sync* {
-    for (int i = low; i < high; ++i) {
-      yield i;
-    }
-}
 
 class AdminPage extends StatelessWidget {
   final AuthService _auth = AuthService();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
-      backgroundColor: Colors.grey,
+      backgroundColor: Color(0xFFFFFFF0),
       appBar: AppBar(
         title: Text("Page Admin"),
         backgroundColor: Color(0xFF7E0000),
@@ -39,21 +32,14 @@ class AdminPage extends StatelessWidget {
                 children: <Widget>[
                   RaisedButton(
                     color: Colors.red[900],
-                    child: Text('Ajouter un avis',
+                    child: Text('Gérer les avis',
                     style: TextStyle(color: Colors.white,
                     fontSize:25.0)),
                     onPressed: () async {
-                      List _classes;
-                      await Firestore.instance.collection('classes').getDocuments().then((snapshot) => {
-                        _classes=List(),
-                        for (final i in range(0, snapshot.documents.length)) {
-                          _classes.add(snapshot.documents[i].documentID.toString()),
-                        },
-                      });
                       Navigator.push(
                           context,
                           MaterialPageRoute(
-                              builder: (context) => AddAvis(classes: _classes)));
+                              builder: (context) => AvisListAdmin()));
                     },
                   ),
                 ],
