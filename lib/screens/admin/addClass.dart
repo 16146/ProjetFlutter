@@ -1,11 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:grades/screens/admin/adminPage.dart';
-import 'package:grades/screens/admin/editClassList.dart';
 import 'package:grades/screens/loading.dart';
-import 'package:grouped_buttons/grouped_buttons.dart';
-import 'package:grades/models/classes.dart';
 
 class AddClass extends StatefulWidget {
   _AddClassState createState() => _AddClassState();
@@ -97,11 +93,6 @@ class _AddClassState extends State<AddClass> {
                       try 
                       {
                         var res =  await (Firestore.instance.collection('classes').document(_classe.text)).get();
-                        print("moukk");
-                        print("moukk");
-                        print("moukk");
-                        print("moukk");
-                        print("glauk " + res.data.toString());
                         if (res.data == null)  
                         {
                           var test = {
@@ -116,7 +107,7 @@ class _AddClassState extends State<AddClass> {
                           MaterialPageRoute(builder: (context) => AdminPage())
                           );
                           setState(() => loading = false); 
-                          };
+                          }
                         } else {
                           showDialog( 
                             context: context,
@@ -146,14 +137,14 @@ class _AddClassState extends State<AddClass> {
                                         MaterialPageRoute(builder: (context) => AdminPage())
                                         );
                                         setState(() => loading = false); 
-                                        };
+                                        }
                                       },
                                     ),
                                   ],
                                 );
                               },
                             );
-                          };
+                          }
                         
                       } catch (err) {
                         print(err);

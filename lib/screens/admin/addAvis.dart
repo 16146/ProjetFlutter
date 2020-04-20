@@ -1,11 +1,9 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
-import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
-import 'package:grades/models/classes.dart';
 import 'package:grouped_buttons/grouped_buttons.dart';
 
 class AddAvis extends StatefulWidget {
-  var classes;
+  final classes;
 
   _AddAvisState createState() => _AddAvisState();
   AddAvis({Key key, @required this.classes}) : super(key: key);
@@ -59,8 +57,6 @@ class _AddAvisState extends State<AddAvis> {
                         labels: new List<String>.from(widget.classes),
                         onSelected: (List<String> checked) => [ 
                         _checked=checked,
-                        print(_checked),
-                        print(checked),
                         ]
                     ),        
               Row(
@@ -77,11 +73,10 @@ class _AddAvisState extends State<AddAvis> {
                   RaisedButton(
                     onPressed: () async {
                       print(_checked);
-                      var classes = new List<String>.from(_checked);
-                      print(classes.toList());
+                      var classesChosen = new List<String>.from(_checked);
                       var test = {
                         'description':_description.text,
-                        'classes': classes,
+                        'classes': classesChosen,
                       };
 
                       if (_formKey.currentState.validate()) {
@@ -91,7 +86,6 @@ class _AddAvisState extends State<AddAvis> {
                             .setData(test);
 
                         Navigator.pop(context);
-                        print(_checked);
                       }
                     },
                     color:Colors.red[900],

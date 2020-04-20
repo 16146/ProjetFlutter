@@ -2,7 +2,6 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
 import 'package:grades/models/classes.dart';
-import 'package:grades/models/avis.dart';
 
 
 class SubscribeClass extends StatefulWidget {
@@ -13,9 +12,7 @@ class SubscribeClass extends StatefulWidget {
 }
 
 class _SubscribeClassState extends State<SubscribeClass> {
-  final Firestore _db = Firestore.instance;
   final FirebaseMessaging _fcm = FirebaseMessaging();
-  bool _subscribed = false;
 
   @override
   Widget build(BuildContext context) {
@@ -30,37 +27,6 @@ class _SubscribeClassState extends State<SubscribeClass> {
       //  child: Icon(Icons.add),
       //),
     );
-  }
-  _subscribeToNamelessCoder(String classe) async {
-    _fcm.subscribeToTopic(classe).then((_) {
-      if (mounted) {
-        setState(() {
-          _subscribed = true;
-        });
-      }
-    }).catchError((error) {
-      if (mounted) {
-        setState(() {
-          _subscribed = false;
-        });
-      }
-    });
-  }
-
-  _unsubscribeToNamelessCoder(String classe) async {
-    _fcm.unsubscribeFromTopic(classe).then((_) {
-      if (mounted) {
-        setState(() {
-          _subscribed = false;
-        });
-      }
-    }).catchError((error) {
-      if (mounted) {
-        setState(() {
-          _subscribed = false;
-        });
-      }
-    });
   }
 
   Widget _buildBody(BuildContext context) {

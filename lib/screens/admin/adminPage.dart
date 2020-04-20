@@ -1,10 +1,8 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
 import 'package:grades/screens/admin/addAvis.dart';
-import 'package:grades/screens/admin/addClass.dart';
 import 'package:grades/screens/admin/editClassList.dart';
 import 'package:grades/services/authService.dart';
-import 'package:grades/screens/avisList.dart';
 import 'package:grades/screens/homePage.dart';
 
 Iterable<int> range(int low, int high) sync* {
