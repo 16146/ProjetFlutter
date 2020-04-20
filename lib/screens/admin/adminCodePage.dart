@@ -51,7 +51,7 @@ class _AdminCodePageState extends State<AdminCodePage> {
                         borderSide: BorderSide(color: Colors.red, width: 2.0)
                       ),        
                     ),
-                    validator: (value) => value == 0000 ? "Code invalide" : null
+                    validator: (value) => value == '0000' ? "Code invalide" : null
                   ),
                 ],
               )),

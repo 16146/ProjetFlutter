@@ -1,6 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
-import 'package:grades/screens/addAvis.dart';
+import 'package:grades/screens/admin/addAvis.dart';
 import 'package:grades/models/user.dart';
 import 'package:grades/models/avis.dart';
 

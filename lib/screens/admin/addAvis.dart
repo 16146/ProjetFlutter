@@ -1,6 +1,7 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_messaging/firebase_messaging.dart';
 import 'package:flutter/material.dart';
+import 'package:provider/provider.dart';
 import 'package:grades/models/classes.dart';
 import 'package:grouped_buttons/grouped_buttons.dart';
 
@@ -13,11 +14,28 @@ class _AddAvisState extends State<AddAvis> {
   final _description = TextEditingController();
   final Firestore _db = Firestore.instance;
   final FirebaseMessaging _fcm = FirebaseMessaging();
+  Map<String, bool> someMap = {  };
+  final List<String> _selectedClasses = List<String>();
   //final _classes = TextEditingController();
   var _classes = List() ;
-
   var _checked = List(); 
-  
+
+  void _onClassesSelected(bool value, key) {
+    if (value == true) {
+      setState(() {
+        someMap[key] = value;
+        _selectedClasses.add(key);
+        print(_selectedClasses);
+      });
+    } else {
+      setState(() {
+        someMap[key] = value;
+        _selectedClasses.remove(key);
+        print(_selectedClasses);
+      });
+    }
+  }
+
   @override
   void dispose() {
     _description.dispose();
@@ -43,10 +61,13 @@ class _AddAvisState extends State<AddAvis> {
 
   Widget build(BuildContext context) {
     print(_classes);
-    print("EAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
-    print(_classes);
     var liste = new List<String>.from(_classes);
     print(liste);
+    /*final classes = Provider.of<List<Classes>>(context);
+    for (var clas in classes) {
+      someMap.putIfAbsent(clas.nom, () => false);
+    }*/
+
     return Scaffold(
       appBar: AppBar(
         title: Text("Ajouter un avis"),
@@ -77,14 +98,29 @@ class _AddAvisState extends State<AddAvis> {
                       return null;
                     },
                   ),
-                  CheckboxGroup(
+                  
+                  /*CheckboxGroup(
                         labels: liste,
                         onSelected: (List<String> checked) => [ 
                         _checked=checked,
                         print(_checked),
                         print(checked),
                         ]
-                      ),
+                    ),*/
+                  
+                  ListView(
+                    children: someMap.keys.map((String key) {
+                      return CheckboxListTile(
+                        title: Text(key),
+                        value: someMap[key],
+                        onChanged: (bool value) {
+                          setState(() {
+                            _onClassesSelected(value, key);
+                          });
+                        },
+                      );
+                    }).toList(),
+                  ),
                 ],
               )),
               Row(
@@ -113,7 +149,6 @@ class _AddAvisState extends State<AddAvis> {
                             .setData(test);
 
                         Navigator.pop(context);
-                        print("mouk en bermuda");
                         print(_checked);
                       }
                     },

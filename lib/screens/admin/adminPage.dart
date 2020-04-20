@@ -1,5 +1,5 @@
 import 'package:flutter/material.dart';
-import 'package:grades/screens/addAvis.dart';
+import 'package:grades/screens/admin/addAvis.dart';
 import 'package:grades/screens/admin/addClass.dart';
 import 'package:grades/screens/admin/deleteClass.dart';
 import 'package:grades/services/authService.dart';

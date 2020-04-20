@@ -12,8 +12,8 @@ class HomePage extends StatelessWidget {
     var data = message['data'] ?? message;
     String expectedAttribute = data['expectedAttribute'];
     /// [...]
-}
-
+  }
+  
   @override
   Widget build(BuildContext context) {
     return Scaffold(

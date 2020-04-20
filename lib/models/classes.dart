@@ -4,9 +4,8 @@ class Classes {
   final String nom;
   final String professeur;
 
-  Classes(DocumentSnapshot snapshot)
-    : nom = snapshot.documentID,
-      professeur = snapshot.data['Professeur'];
+  Classes(DocumentSnapshot snapshot) : nom = snapshot.documentID,
+    professeur = snapshot.data['Professeur'];
 
 
   String toString() => "Classes($professeur)<$nom>";
