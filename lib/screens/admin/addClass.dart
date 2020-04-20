@@ -54,9 +54,6 @@ class _AddClassState extends State<AddClass> {
                       ),
                     ),
                     validator: (value) {
-                      print('moul');
-                      
-                      print('mouk');
                       if (value.isEmpty) {
                         return 'Champs vide, entrer une nouvelle classe';
                       }
@@ -100,11 +97,6 @@ class _AddClassState extends State<AddClass> {
                       try 
                       {
                         var res =  await (Firestore.instance.collection('classes').document(_classe.text)).get();
-                        print("moukk");
-                        print("moukk");
-                        print("moukk");
-                        print("moukk");
-                        print("glauk " + res.data.toString());
                         if (res.data == null)  
                         {
                           var test = {

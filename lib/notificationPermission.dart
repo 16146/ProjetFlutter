@@ -117,8 +117,6 @@ class _NotificationPermissionState extends State<NotificationPermission> {
       //},
     });
     print(_classes);
-    print("EAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
-    print(_classes);
     var liste = new List<String>.from(_classes);
     return Scaffold(
       appBar: AppBar(
@@ -187,10 +185,8 @@ class _NotificationPermissionState extends State<NotificationPermission> {
                          //   .document()
                          //   .setData(test);
                         //Navigator.pop(context);
-                        print("mouk en bermuda");
                         print(checked);
                         _fcm.subscribeToTopic(checked);
-
                       }
                     },
                     child: Text("Ajouter"),

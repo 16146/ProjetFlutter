@@ -64,25 +64,26 @@ class _SubscribeClassState extends State<SubscribeClass> {
           trailing: Text((classe.professeur).toString()),
           subtitle: Column (
             mainAxisAlignment: MainAxisAlignment.center,
-      crossAxisAlignment: CrossAxisAlignment.center,
-      children: [
-            RaisedButton(
-            color: Colors.red[900],
-            child: Text("S'inscrire à la classe",
-            style: TextStyle(color: Colors.white)),
-            onPressed: () {
-              _fcm.subscribeToTopic(classe.nom);
-              }
-          ),
-          RaisedButton(
-            color: Colors.red[900],
-            child: Text("Se désinscrire",
-            style: TextStyle(color: Colors.white)),
-            onPressed: () {
-              _fcm.unsubscribeFromTopic(classe.nom);
-              }
-          )
-      ]   
+            crossAxisAlignment: CrossAxisAlignment.center,
+            children: [
+              RaisedButton(
+                color: Colors.red[900],
+                child: Text("S'inscrire à la classe",
+                style: TextStyle(color: Colors.white)),
+                onPressed: () {
+                  _fcm.subscribeToTopic(classe.nom);
+                }
+              ),
+              RaisedButton(
+                color: Colors.red[900],
+                child: Text("Se désinscrire",
+                  style: TextStyle(color: Colors.white)
+                ),
+                onPressed: () {
+                  _fcm.unsubscribeFromTopic(classe.nom);
+                }
+              )
+            ]   
           ),
           
           onTap: () => print(classe),

@@ -40,8 +40,6 @@ class _PoubelleState extends State<Poubelle> {
       },
     });
     print(_classes);
-    print("EAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA");
-    print(_classes);
     var liste = new List<String>.from(_classes);
     return Scaffold(
       appBar: AppBar(
@@ -110,7 +108,6 @@ class _PoubelleState extends State<Poubelle> {
                          //   .document()
                          //   .setData(test);
                         //Navigator.pop(context);
-                        print("mouk en bermuda");
                         print(checked);
                         _fcm.subscribeToTopic(checked);
 
