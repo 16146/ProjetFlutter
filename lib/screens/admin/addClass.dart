@@ -2,7 +2,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:firebase_auth/firebase_auth.dart';
 import 'package:flutter/material.dart';
 import 'package:grades/screens/admin/adminPage.dart';
-import 'package:grades/screens/admin/editClassList.dart';
+import 'package:grades/screens/admin/deleteClass.dart';
 import 'package:grades/screens/loading.dart';
 import 'package:grouped_buttons/grouped_buttons.dart';
 import 'package:grades/models/classes.dart';
@@ -43,7 +43,7 @@ class _AddClassState extends State<AddClass> {
                     controller: _classe,
                     decoration: const InputDecoration(
                       labelText: 'Ajouter une nouvelle classe',
-                      hintText: '1A',
+                      hintText: '10C',
                       fillColor: Colors.white,
                       filled: true,
                       enabledBorder: OutlineInputBorder(
@@ -54,6 +54,9 @@ class _AddClassState extends State<AddClass> {
                       ),
                     ),
                     validator: (value) {
+                      print('moul');
+                      
+                      print('mouk');
                       if (value.isEmpty) {
                         return 'Champs vide, entrer une nouvelle classe';
                       }

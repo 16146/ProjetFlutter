@@ -1,7 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:grades/screens/admin/addAvis.dart';
 import 'package:grades/screens/admin/addClass.dart';
-import 'package:grades/screens/admin/editClassList.dart';
+import 'package:grades/screens/admin/deleteClass.dart';
 import 'package:grades/services/authService.dart';
 import 'package:grades/screens/avisList.dart';
 import 'package:grades/screens/homePage.dart';
@@ -55,7 +55,7 @@ class AdminPage extends StatelessWidget {
                     color: Colors.red[900],
                     onPressed: () {
                       Navigator.push(context,
-                          MaterialPageRoute(builder: (context) => EditClassList()));
+                          MaterialPageRoute(builder: (context) => DeleteClass()));
                     },
                     child: Text("Gérer les classes",
                     style: TextStyle(color: Colors.white,

@@ -8,11 +8,11 @@ import 'package:grades/screens/avisList.dart';
 class HomePage extends StatelessWidget {
   final AuthService _auth = AuthService();
 
-  // Future<void> _handleNotification (Map<dynamic, dynamic> message, bool dialog) async {
-  //   var data = message['data'] ?? message;
-  //   String expectedAttribute = data['expectedAttribute'];
-  //   /// [...]
-  // }
+  Future<void> _handleNotification (Map<dynamic, dynamic> message, bool dialog) async {
+    var data = message['data'] ?? message;
+    String expectedAttribute = data['expectedAttribute'];
+    /// [...]
+  }
   
   @override
   Widget build(BuildContext context) {
