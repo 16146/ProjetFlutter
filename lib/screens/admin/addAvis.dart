@@ -99,16 +99,16 @@ class _AddAvisState extends State<AddAvis> {
                     },
                   ),
                   
-                  /*CheckboxGroup(
-                        labels: liste,
-                        onSelected: (List<String> checked) => [ 
-                        _checked=checked,
-                        print(_checked),
-                        print(checked),
-                        ]
-                    ),*/
+                  CheckboxGroup(
+                    labels: liste,
+                    onSelected: (List<String> checked) => [ 
+                      _checked=checked,
+                      print(_checked),
+                      print(checked),
+                    ]
+                  ),
                   
-                  ListView(
+                  /*ListView(
                     children: someMap.keys.map((String key) {
                       return CheckboxListTile(
                         title: Text(key),
@@ -120,7 +120,7 @@ class _AddAvisState extends State<AddAvis> {
                         },
                       );
                     }).toList(),
-                  ),
+                  ),*/
                 ],
               )),
               Row(
