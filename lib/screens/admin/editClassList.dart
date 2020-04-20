@@ -1,17 +1,16 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
-import 'package:grades/screens/admin/addAvis.dart';
 import 'package:grades/screens/admin/addClass.dart';
 import 'package:grades/models/classes.dart';
 
-class DeleteClass extends StatefulWidget {
+class EditClassList extends StatefulWidget {
   @override
-  _DeleteClass createState() {
-    return _DeleteClass();
+  _EditClassList createState() {
+    return _EditClassList();
   }
 }
 
-class _DeleteClass extends State<DeleteClass> {
+class _EditClassList extends State<EditClassList> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
