@@ -1,5 +1,6 @@
 import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/material.dart';
+import 'package:grades/screens/loading.dart';
 import 'package:grouped_buttons/grouped_buttons.dart';
 
 class AddAvis extends StatefulWidget {
@@ -13,6 +14,8 @@ class _AddAvisState extends State<AddAvis> {
   final _formKey = GlobalKey<FormState>();
   final _titre = TextEditingController();
   final _description = TextEditingController();
+  bool loading = false; 
+
   // final Firestore _db = Firestore.instance;
   // final FirebaseMessaging _fcm = FirebaseMessaging();
   Map<String, bool> someMap = {  };
@@ -28,7 +31,7 @@ class _AddAvisState extends State<AddAvis> {
   }
 
   Widget build(BuildContext context) {
-    return Scaffold(
+    return loading ? Loading : Scaffold(
       appBar: AppBar(
         title: Text("Ajouter un avis"),
         backgroundColor: Color(0xFF7E0000),
@@ -80,7 +83,10 @@ class _AddAvisState extends State<AddAvis> {
                   RaisedButton(
                     onPressed: () {
                       Navigator.pop(context);
+                      setState(() => loading = false); 
+
                     },
+                    
                     color:Colors.black,
                     child: Text("Annuler", 
                     style: TextStyle(fontSize: 17.0,color: Colors.white)),
@@ -102,6 +108,8 @@ class _AddAvisState extends State<AddAvis> {
                             .setData(test);
 
                         Navigator.pop(context);
+                        setState(() => loading = false); 
+
                       }
                     },
                     color:Colors.red[900],

@@ -103,9 +103,7 @@ class _AddClassState extends State<AddClass> {
                               .collection('classes')
                               .document(_classe.text)
                               .setData(test);
-                          Navigator.push(context, 
-                          MaterialPageRoute(builder: (context) => AdminPage())
-                          );
+                          Navigator.pop(context);
                           setState(() => loading = false); 
                           }
                         } else {
